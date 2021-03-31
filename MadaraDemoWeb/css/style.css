@@ -1090,6 +1090,78 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   justify-content: center;
   align-items: center;
 }
+.content-main__horizontal .more {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  margin: 2em auto;
+}
+@media screen and (max-width: 799px) {
+  .content-main__horizontal .more {
+    width: 95%;
+    margin: 2em auto;
+  }
+}
+.content-main__horizontal .more a {
+  padding: 1em 0;
+  border: 1px solid #ebebeb;
+  background-color: #f9f9f9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  text-decoration: none;
+  color: #111;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin: 1em 0;
+  transition: all ease .3s;
+  font-weight: 600;
+}
+.content-main__horizontal .more a:hover {
+  background-color: #eb3349;
+  color: #fff;
+  transition: all ease .3s;
+}
+.content-main__horizontal .more a i {
+  font-size: 80%;
+  margin-left: .5em;
+  margin-top: .2em;
+}
+.content-main__horizontal .ads {
+  width: 95%;
+  margin: 0 auto;
+}
+.content-main__vertical .vertical-title div.rotate {
+  /* icon */
+  position: relative;
+  background-image: linear-gradient(135deg, #eb3349 0%, #f35b43 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8em 0;
+  margin: 3em 1em;
+  /* fonawesome */
+}
+.content-main__vertical .vertical-title div.rotate p {
+  color: #fff;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.content-main__vertical .vertical-title div.rotate div {
+  position: absolute;
+  width: .8em;
+  height: .8em;
+  left: 2em;
+  bottom: -7%;
+  transform: rotate(45deg);
+  background-image: linear-gradient(135deg, #f35b43 0%, #eb3349 10%);
+}
 @media screen and (max-width: 799px) {
   .content-main__vertical {
     display: none;
