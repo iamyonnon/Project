@@ -43,12 +43,6 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="main-header">
-                            <!-- 
-                                Checkbox for user check 
-                                        Check Start
-                            -->
-                            <input type="checkbox" id="check">
-                            <!-- Check End -->
 
                             <!-- ****** Logo Start ****** -->
                                 <a id="logo" href="index.html">
@@ -58,7 +52,7 @@
     
                             <!-- ****** Menu Start ****** -->
                                 <div class="menu-dropdown">
-                                    <a class="menu-dropdown__primary" href="#">
+                                    <a class="menu-dropdown__item menu-dropdown__primary" href="#">
 
                                         <span>home</span>
 
@@ -79,7 +73,7 @@
 
                                     </a>
     
-                                    <a class="menu-dropdown__primary" href="#">
+                                    <a class="menu-dropdown__item menu-dropdown__primary" href="#">
 
                                         <span>manga</span>
 
@@ -101,17 +95,17 @@
 
                                     </a>
     
-                                    <a class="menu-dropdown__primary" href="#">
+                                    <a class="menu-dropdown__item" href="#">
                                         <span>blog</span>
                                         <i class="far fa-chevron-down"></i>
                                     </a>
     
-                                    <a class="menu-dropdown__primary" href="#">
+                                    <a class="menu-dropdown__item" href="#">
                                         <span>about us</span>
                                         <i class="far fa-chevron-down"></i>
                                     </a>
     
-                                    <a class="menu-dropdown__primary" href="#">
+                                    <a class="menu-dropdown__item" href="#">
                                         <i class="fas fa-shopping-bag"></i>
                                         <span>shop</span>
                                         <i class="far fa-chevron-down"></i>
@@ -125,6 +119,11 @@
                                     <div class="search-icon">
                                         <i class="fal fa-search"></i>
                                         <a href="#">Advanced</a>
+                                        <div class="hamburger bar">
+                                            <span class="top"></span>
+                                            <span class="mid"></span>
+                                            <span class="bottom"></span>
+                                        </div>
                                     </div>
                                 </div>
                             <!-- ****** Start End ****** -->
@@ -148,16 +147,37 @@
                     <div class="col-md-12">
                         <div class="main-nav">
                             <div class="main-nav__category">
-                                <a href="#">romace</a>
-                                <a href="#">comedy</a>
-                                <a href="#">shoujo</a>
-                                <a href="#">drama</a>
-                                <a href="#">school life</a>
-                                <a href="#">shounen</a>
-                                <a href="#">action</a>
-                                <a href="#">
+                                <a class="nav-link" href="#">romace</a>
+                                <a class="nav-link" href="#">comedy</a>
+                                <a class="nav-link" href="#">shoujo</a>
+                                <a class="nav-link" href="#">drama</a>
+                                <a class="nav-link" href="#">school life</a>
+                                <a class="nav-link" href="#">shounen</a>
+                                <a class="nav-link" href="#">action</a>
+                                <a class="nav-link" href="#" id="more-hover">
                                     more
                                     <i class="fas fa-caret-right"></i>
+                                    <!-- <ul id="more-item">
+                                        <li>
+                                            <a href="#">daw</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#">daw</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#"></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#"></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#"></a>
+                                        </li>
+                                    </ul> -->
                                 </a>
                             </div>
         
@@ -265,8 +285,8 @@
                         </div>
                     </div>
     
-                    <div class="main-update">
-                        <div class="row">
+                    <div class="row">
+                        <div class="main-update">
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 main-update__item">
                                 <!-- 1 -->
                                 <div class="item-thumbnail">

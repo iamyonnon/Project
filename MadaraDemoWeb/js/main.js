@@ -1,3 +1,20 @@
+
+/* Hamburger Animation */
+(function($) {    
+    $('.hamburger').on('click', function() {
+       if($(this).hasClass('active-in')) {
+          $(this).removeClass('active-in');
+          $(this).addClass('active-out');
+       } 
+         else {
+          $(this).removeClass('active-out');
+          $(this).addClass('active-in');
+       }
+    });
+ })(jQuery);
+
+
+
 /* Preloader */
 $(window).on('load', function() {
     if($('.cover').length){
@@ -68,3 +85,4 @@ $('#slideUpdate').owlCarousel({
         }
     }
 })
+
