@@ -637,30 +637,70 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   flex-flow: row nowrap;
   height: 25%;
 }
+@media screen and (max-width: 1180px) {
+  .title {
+    height: 20% !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .title {
+    height: 18% !important;
+  }
+}
 @media screen and (max-width: 799px) {
   .title {
     height: 20%;
   }
 }
-.title div.fixed-bar {
+.title div.fixed div.fixed-bar {
   width: 20%;
   bottom: 100%;
-  display: none;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
 }
-@media screen and (max-width: 1180px) {
-  .title div.fixed-bar {
+@media only screen and (max-width: 1300px) {
+  .title div.fixed div.fixed-bar {
     display: none;
   }
 }
-.title div.fixed-bar__naruto img#fixed1 {
+.title div.fixed div.fixed-bar__naruto {
+  position: absolute;
+}
+.title div.fixed div.fixed-bar__naruto img#fixed1 {
   position: fixed;
   left: 8%;
   top: 25%;
 }
-.title div.fixed-bar__onepiece img#fixed2 {
+@media only screen and (max-width: 1700px) {
+  .title div.fixed div.fixed-bar__naruto img#fixed1 {
+    transform: translateX(2%);
+    transition: all ease .3s;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .title div.fixed div.fixed-bar__naruto img#fixed1 {
+    left: -10%;
+  }
+}
+.title div.fixed div.fixed-bar__onepiece {
+  position: absolute;
+}
+.title div.fixed div.fixed-bar__onepiece img#fixed2 {
   top: 25%;
   right: 8%;
   position: fixed;
+}
+@media only screen and (max-width: 1700px) {
+  .title div.fixed div.fixed-bar__onepiece img#fixed2 {
+    transform: translateX(2%);
+    transition: all ease .3s;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .title div.fixed div.fixed-bar__onepiece img#fixed2 {
+    right: -10%;
+  }
 }
 .title .container {
   width: 60%;
@@ -668,7 +708,52 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   padding: 0;
   overflow: hidden;
 }
-@media screen and (max-width: 799px) {
+@media only screen and (max-width: 1800px) {
+  .title .container {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .title .container {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .title .container {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .title .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .title .container {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .title .container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .title .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .title .container {
+    width: 80% !important;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .title .container {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 1180px) {
   .title .container {
     width: 90%;
   }
@@ -678,23 +763,26 @@ nav .container .main-nav__login .login-start a.a__login:hover {
     width: 100%;
   }
 }
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 799px) {
   .title .container {
     width: 90%;
   }
 }
 .title .banner {
-  max-height: 400px;
-  background-color: #fff;
-  overflow: hidden;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
 }
 .title .banner .owl-theme {
-  max-height: 400px;
+  width: 100%;
 }
 .title .banner .owl-theme .item {
-  display: block;
+  display: inline-block;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   width: 100%;
 }
@@ -718,6 +806,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   height: 100%;
   width: 100%;
   max-width: 642px;
+  max-height: 320px;
 }
 .title .banner .owl-theme .item a p {
   display: inline-block;
@@ -1055,6 +1144,9 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 08. Content Main Start
 --------------------------------------------- 
 */
+.content-main__horizontal {
+  /* LATEST MANGA UPDATES */
+}
 @media screen and (max-width: 799px) {
   .content-main__horizontal {
     width: 100%;
@@ -1069,6 +1161,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   align-items: center;
   flex-flow: row nowrap;
   margin: 4% 0 4% -2%;
+  border-bottom: 2px solid #ebebeb;
 }
 @media screen and (max-width: 799px) {
   .content-main__horizontal .horizontal-title {
@@ -1111,14 +1204,46 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   margin-top: .3em;
 }
 .content-main__horizontal .horizontal-content {
-  width: 100%;
+  width: 100% !important;
+}
+@media only screen and (max-width: 991px) {
+  .content-main__horizontal .horizontal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 799px) {
+  .content-main__horizontal .horizontal-content {
+    display: inline-block;
+    width: 100% !important;
+  }
 }
 .content-main__horizontal .horizontal-content__item {
   margin: 15% 0;
+  padding: 0 !important;
+}
+@media only screen and (max-width: 991px) {
+  .content-main__horizontal .horizontal-content__item {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .content-main__horizontal .horizontal-content__item {
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .content-main__horizontal .horizontal-content__item {
+    width: 100%;
+    max-width: 200px;
+  }
 }
 .content-main__horizontal .horizontal-content__item .item-picture a img {
   width: 100%;
   user-select: none;
+  max-width: 193px;
 }
 .content-main__horizontal .horizontal-content__item .item-paragraph {
   height: 5vh;
@@ -1271,6 +1396,14 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   width: 95%;
   margin: 0 auto;
 }
+.content-main__vertical {
+  padding: 6% 6%;
+  border: 2px solid #ebebeb;
+  margin-top: 20%;
+}
+.content-main__vertical .vertical-title {
+  width: 100%;
+}
 .content-main__vertical .vertical-title div.rotate {
   /* icon */
   position: relative;
@@ -1278,11 +1411,12 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .8em 0;
-  margin: 3em 1em;
+  padding: .3em 0;
+  margin-bottom: 10%;
   /* fonawesome */
 }
 .content-main__vertical .vertical-title div.rotate p {
+  margin-top: 5%;
   color: #fff;
   font-size: 1.2em;
   text-transform: uppercase;
