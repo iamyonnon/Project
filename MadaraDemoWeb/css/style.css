@@ -32,6 +32,7 @@ Table of contents
   color: inherit;
   box-sizing: border-box;
   font-family: 'Be Vietnam', sans-serif;
+  scroll-behavior: smooth;
 }
 *:focus {
   outline: 0;
@@ -172,6 +173,36 @@ body {
 }
 /* 
 ---------------------------------------------
+04. Back to top
+--------------------------------------------- 
+*/
+#back-to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+  background-color: #eb3349;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  cursor: pointer;
+  border-radius: 3px;
+  z-index: 999999;
+}
+@media screen and (max-width: 799px) {
+  #back-to-top {
+    right: 10px;
+  }
+}
+#back-to-top i {
+  font-size: 2em;
+  color: #fff;
+}
+
+/* 
+---------------------------------------------
 04. Header
 --------------------------------------------- 
 */
@@ -243,9 +274,12 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: row;
   white-space: nowrap;
   cursor: pointer;
   position: relative;
+  padding: 2% .5%;
   /* Text Hover Animation */
   /* Menu Absolute */
   /* ab */
@@ -254,9 +288,8 @@ body {
   font-size: 100%;
   text-transform: uppercase;
   font-weight: bolder;
-  padding: 5px 5px;
 }
-.header-aria .main-header .menu-dropdown__item span::after {
+.header-aria .main-header .menu-dropdown__item::after {
   content: "";
   position: absolute;
   width: 0;
@@ -266,9 +299,13 @@ body {
   background-color: rgba(255, 255, 255, 0.78);
   bottom: 0;
 }
-.header-aria .main-header .menu-dropdown__item span:hover:after {
+.header-aria .main-header .menu-dropdown__item:hover:after {
   width: 100%;
   left: 0;
+}
+.header-aria .main-header .menu-dropdown__item i {
+  margin-top: 5%;
+  margin-right: 2%;
 }
 .header-aria .main-header .menu-dropdown__item i.fa-chevron-down {
   margin-left: 10%;
@@ -1222,7 +1259,14 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 }
 .content-main__horizontal .horizontal-content__item {
   margin: 15% 0;
-  padding: 0 !important;
+  transition: all ease .3s;
+  position: relative;
+  transition: all ease .3s;
+  padding: 0 5% 20% 5%;
+}
+.content-main__horizontal .horizontal-content__item:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transition: all ease .3s;
 }
 @media only screen and (max-width: 991px) {
   .content-main__horizontal .horizontal-content__item {
@@ -1442,6 +1486,93 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 /* 
 ---------------------------------------------
 08. Content Main End
+--------------------------------------------- 
+*/
+/* 
+---------------------------------------------
+09. Footer Start
+--------------------------------------------- 
+*/
+.footer {
+  margin-top: calc(150px);
+  padding: 50px 0 70px 0;
+}
+.footer .footer-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.footer .footer-main img {
+  width: 100%;
+  max-width: 790px;
+  max-height: 100px;
+}
+.footer .footer-main ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0;
+  flex-wrap: wrap;
+  max-height: 20%;
+}
+@media screen and (max-width: 799px) {
+  .footer .footer-main ul {
+    margin: 20% 0 5% 0;
+  }
+}
+.footer .footer-main ul li {
+  padding: 10px 9px;
+}
+@media screen and (max-width: 799px) {
+  .footer .footer-main ul li {
+    padding: 10px 6px;
+  }
+}
+.footer .footer-main ul li a {
+  color: #111;
+  text-transform: uppercase;
+  font-size: 1.11em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all ease .3s;
+  font-weight: 300;
+  text-align: justify;
+  white-space: nowrap;
+}
+.footer .footer-main ul li a:hover {
+  color: #eb3349;
+  transition: all ease .3s;
+}
+@media screen and (max-width: 799px) {
+  .footer .footer-main ul li a {
+    font-size: 1.05em;
+  }
+}
+.footer .footer-main ul li span {
+  color: #212529;
+  font-weight: 600;
+  user-select: none;
+}
+@media screen and (max-width: 799px) {
+  .footer .footer-main ul li span {
+    font-size: .8em;
+  }
+}
+.footer .footer-main .coppyright p {
+  font-size: 1em;
+  line-height: 20px;
+  color: #888888;
+}
+@media screen and (max-width: 799px) {
+  .footer .footer-main .coppyright p {
+    font-size: .9em;
+  }
+}
+
+/* 
+---------------------------------------------
+09. Footer End
 --------------------------------------------- 
 */
 /* Temp */

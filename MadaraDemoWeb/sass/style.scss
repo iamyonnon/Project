@@ -34,6 +34,7 @@ Table of contents
   color: inherit;
   box-sizing: border-box;
   font-family: 'Be Vietnam', sans-serif; 
+  scroll-behavior: smooth;
 
   &:focus {
     outline: 0;
@@ -62,6 +63,9 @@ $neu-02: #dae1f5;
 $neu-03: #6f7073;
 $neu-04: #505050;
 $neu-05: #403e3e;
+
+
+$x1: 1200px;
 
 /* 
 ------------------------------------------------
@@ -333,6 +337,37 @@ body {
   }
 }
 
+
+/* 
+---------------------------------------------
+04. Back to top
+--------------------------------------------- 
+*/
+#back-to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+  background-color: #eb3349;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  cursor: pointer;
+  border-radius: 3px;
+  z-index: 999999;
+  @include sm() {
+    right: 10px;
+  }
+  i {
+    font-size: 2em;
+    color: #fff;
+  }
+}
+
+
+
 /* 
 ---------------------------------------------
 04. Header
@@ -403,33 +438,38 @@ body {
         text-decoration: none;
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-direction: row;
         white-space: nowrap;
         cursor: pointer;
         position: relative;
+        padding: 2% .5%;
         /* Text Hover Animation */
         span {
           font-size: 100%;
           text-transform: uppercase;
           font-weight: bolder;
-          padding: 5px 5px;
-          &::after {
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 2px;
-            left: 50%;
-            transition: width 0.2s ease 0s, left 0.2s ease 0s;
-            background-color: rgba(255, 255, 255, 0.78);
-            bottom: 0;
-          }
+        }
 
-          &:hover:after {
-            width: 100%;
-            left: 0;
-          }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 2px;
+          left: 50%;
+          transition: width 0.2s ease 0s, left 0.2s ease 0s;
+          background-color: rgba(255, 255, 255, 0.78);
+          bottom: 0;
+        }
+
+        &:hover:after {
+          width: 100%;
+          left: 0;
         }
 
         i {
+          margin-top: 5%;
+          margin-right: 2%;
           &.fa-chevron-down {
             margin-left: 10%;
             font-size: 80%;
@@ -1334,6 +1374,9 @@ nav {
 */
   .content-main {
       &__horizontal {
+        @media only screen and(max-width: 991px) {
+
+        }
         @include sm() {
           width: 100%;
         }
@@ -1388,6 +1431,9 @@ nav {
             letter-spacing: 1px;
             line-height: 2em;
             margin-top: .3em;
+            // @media only screen and(max-width: 1000px) {
+
+            // }
           }
         }
 
@@ -1409,7 +1455,14 @@ nav {
           }
           &__item {
             margin: 15% 0;
-            padding: 0 !important;
+            transition: all ease .3s;
+            position: relative;
+            transition: all ease .3s;
+            padding: 0 5% 20% 5%;
+            &:hover {
+              box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+              transition: all ease .3s;
+            }
             @media only screen and(max-width: 991px) {
               width: 100%;
             }
@@ -1419,6 +1472,7 @@ nav {
             @include sm() {
               width: 100%;
               max-width: 200px;
+              
             }
             .item-picture {
               a {
@@ -1479,16 +1533,21 @@ nav {
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
-                padding: 5% 1%;
-                // @media only screen and(max-width: 991px) {
-                //   display: flex;
-                //   align-items: center;
+                padding: 5% 1%; //test
+
+                // @media only screen and(max-width: $x1) {
+                //   display: flex ;
+                //   align-items: center; 
                 //   justify-content: center;
-                //   flex-direction: column;
-                // } test
+                //   flex-flow: column nowrap;
+                //   // height: 20%;
+                // }
                 .first-chapter {
                   display: flex;
                   align-items: center;
+                  // @media only screen and(max-width: $x1) {
+                  //   height: 20%;
+                  // }
                   a {
                     color: #666666;
                     font-size: 85%;
@@ -1496,6 +1555,9 @@ nav {
                     white-space: nowrap;
                     text-decoration: none;
                     cursor: pointer;
+                    // @media only screen and(max-width: $x1) {
+                    //   margin: .2em 0;
+                    // }
                   }
                 }
                 
@@ -1510,6 +1572,9 @@ nav {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    // @media only screen and(max-width: $x1) {
+                    //   margin: .2em 0;
+                    // }
                   }        
                 }
               }
@@ -1520,6 +1585,12 @@ nav {
                 align-items: center;
                 width: 100%;
                 padding: 5% 1%;
+                // @media only screen and(max-width: $x1) {
+                //   display: flex;
+                //   justify-content: inherit !important;
+                //   align-items: center;
+                //   flex-flow: column nowrap;
+                // }
                 .second-chapter {
                   display: flex;
                   align-items: center;
@@ -1530,6 +1601,9 @@ nav {
                     white-space: nowrap;
                     text-decoration: none;
                     cursor: pointer;
+                    // @media only screen and(max-width: $x1) {
+                    //   margin: .2em 0;
+                    // }
                   }
                 }
                 
@@ -1544,6 +1618,9 @@ nav {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    // @media only screen and(max-width: $x1) {
+                    //   margin: .2em 0;
+                    // }
                   }        
                 }
               }
@@ -1645,6 +1722,92 @@ nav {
 08. Content Main End
 --------------------------------------------- 
 */
+
+
+
+/* 
+---------------------------------------------
+09. Footer Start
+--------------------------------------------- 
+*/
+.footer {
+    // background-color: #f3f3f3;
+    margin-top: calc(150px);
+    padding: 50px 0 70px 0;
+    .footer-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      img {
+        width: 100%;
+        max-width: 790px;
+        max-height: 100px;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5% 0;
+        flex-wrap: wrap;
+        max-height: 20%;
+        @include sm() {
+          margin: 20% 0 5% 0;
+        }
+
+        li {
+          padding: 10px 9px;
+          @include sm() {
+            padding: 10px 6px;
+          }
+          a {
+            color: #111;
+            text-transform: uppercase;
+            font-size: 1.11em;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all ease .3s;
+            font-weight: 300;
+            text-align: justify;
+            white-space: nowrap;
+            &:hover {
+              color: #eb3349;
+              transition: all ease .3s;
+            }
+            @include sm() {
+              font-size: 1.05em;
+            }
+          }
+          span {
+            color: #212529;
+            font-weight: 600;
+            user-select: none;
+            @include sm() {
+              font-size: .8em;
+            }
+          }
+        }
+      }
+
+      .coppyright {
+        p {
+          font-size: 1em;
+          line-height: 20px;
+          color: #888888;
+          @include sm() {
+            font-size: .9em;
+          }
+        }
+      }
+    }
+}
+/* 
+---------------------------------------------
+09. Footer End
+--------------------------------------------- 
+*/
+
+
 
   /* Temp */
     /* Menu Dropdown */

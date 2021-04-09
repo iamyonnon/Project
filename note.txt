@@ -1,0 +1,11 @@
+- index bỏ catelory
+- Slide 1 ảnh
+* Item
+- Bỏ bên phải, dàn trang ra
+- phần comment, name đặt lên trên
+- Giới hạn 5 comment 
+- Làm button next prev
+* Chapter
+- Bỏ theo chieuefu ngang
+- Bỏ server volume trên top
+- Bỏ my reading history, làm lại comment
