@@ -84,6 +84,10 @@ body {
   height: 200vh;
 }
 
+img {
+  user-select: none;
+}
+
 ::selection {
   background-color: #eb3349;
   color: #fff;
@@ -188,7 +192,6 @@ body {
   align-items: center;
   display: none;
   cursor: pointer;
-  border-radius: 3px;
   z-index: 999999;
 }
 @media screen and (max-width: 799px) {
@@ -839,9 +842,29 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   font-size: .55em;
   transform: rotate(-10deg) translateX(0px) translateY(0px);
 }
-.title .banner .owl-theme .item a img {
+.title .banner .owl-theme .item a div {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 642px;
+  max-height: 320px;
+  position: relative;
+}
+.title .banner .owl-theme .item a div::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9));
+  opacity: 1;
+  transition: all ease .3s;
+}
+.title .banner .owl-theme .item a div img {
   height: 100%;
   width: 100%;
+  filter: contrast(110%);
   max-width: 642px;
   max-height: 320px;
 }
@@ -1262,7 +1285,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   transition: all ease .3s;
   position: relative;
   transition: all ease .3s;
-  padding: 0 5% 20% 5%;
+  padding: 0 0% 20% 0%;
 }
 .content-main__horizontal .horizontal-content__item:hover {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -1284,15 +1307,41 @@ nav .container .main-nav__login .login-start a.a__login:hover {
     max-width: 200px;
   }
 }
-.content-main__horizontal .horizontal-content__item .item-picture a img {
+.content-main__horizontal .horizontal-content__item a.item-picture {
+  width: 100%;
+  height: 100%;
+  padding: 63% 0;
+  max-width: 193px;
+  max-height: 278px;
+  overflow: hidden;
+  position: relative;
+}
+.content-main__horizontal .horizontal-content__item a.item-picture::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: all ease .3s;
+  margin: 0;
+  padding: 0;
+}
+.content-main__horizontal .horizontal-content__item a.item-picture:hover::after {
+  opacity: 1;
+}
+.content-main__horizontal .horizontal-content__item a.item-picture img {
   width: 100%;
   user-select: none;
   max-width: 193px;
+  transition: all ease-in-out .3s;
 }
 .content-main__horizontal .horizontal-content__item .item-paragraph {
   height: 5vh;
   max-height: 10vh;
-  padding: 3vh 0 4vh 0;
+  padding: 3vh 5% 4vh 5%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -1309,6 +1358,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   transition: all ease .3s;
 }
 .content-main__horizontal .horizontal-content__item .item-star {
+  padding: 0 5%;
   display: flex;
   align-items: center;
 }
@@ -1326,6 +1376,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   margin-left: .2em;
 }
 .content-main__horizontal .horizontal-content__item .item-note {
+  padding: 0 5%;
   display: flex;
   align-items: center;
   flex-flow: column nowrap;
@@ -1459,7 +1510,17 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   margin-bottom: 10%;
   /* fonawesome */
 }
+@media screen and (max-width: 799px) {
+  .content-main__vertical .vertical-title div.rotate {
+    padding: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+  }
+}
 .content-main__vertical .vertical-title div.rotate p {
+  display: inline-block;
   margin-top: 5%;
   color: #fff;
   font-size: 1.2em;
@@ -1476,10 +1537,101 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   transform: rotate(45deg);
   background-image: linear-gradient(135deg, #f35b43 0%, #eb3349 10%);
 }
+.content-main__vertical .vertical-box__item {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.content-main__vertical .vertical-box__item .vertical-item:not(:nth-child(1)) {
+  margin: 5% 0;
+}
+.content-main__vertical .vertical-box__item .vertical-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.content-main__vertical .vertical-box__item .vertical-item__picture img {
+  width: 100%;
+  max-width: 75px;
+}
+.content-main__vertical .vertical-box__item .vertical-item__content {
+  height: 100%;
+  width: 100%;
+}
+.content-main__vertical .vertical-box__item .vertical-item__content .vertical-item__title p {
+  display: inline-block;
+  padding: 0 0 0 10%;
+  white-space: nowrap;
+  color: #111;
+  font-weight: 600;
+}
+.content-main__vertical .vertical-box__item .vertical-item__content .vertical-item__note {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  padding: 0 0 0 5%;
+}
+.content-main__vertical .vertical-box__item .vertical-item__content .vertical-item__note .note-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
+}
+.content-main__vertical .vertical-box__item .vertical-item__content .vertical-item__note .note-link a {
+  display: inline-block;
+  padding: 1% 8%;
+  margin: 3% 0;
+  color: #306bf3;
+  white-space: nowrap;
+  font-size: .9em;
+  text-decoration: none;
+  transition: all ease .3s;
+  border-radius: 10px;
+}
+.content-main__vertical .vertical-box__item .vertical-item__content .vertical-item__note .note-link a:hover {
+  transition: all ease-in-out .3s;
+  background-color: #eb3349;
+  color: white;
+}
+.content-main__vertical .vertical-box__item .vertical-item__content .vertical-item__note .note-time {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.content-main__vertical .vertical-box__item .vertical-item__content .vertical-item__note .note-time span {
+  color: #333;
+  padding: 1% 10%;
+  margin: 3% 0;
+  white-space: nowrap;
+  font-size: .9em;
+}
+.content-main__vertical .vertical-box__item .more-vertical {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-main__vertical .vertical-box__item .more-vertical a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb3349;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100%;
+  padding: 3% 0;
+  transition: all ease .3s;
+  text-decoration: none;
+}
+.content-main__vertical .vertical-box__item .more-vertical a:hover {
+  background-color: #111;
+  transition: all ease .3s;
+}
 @media screen and (max-width: 799px) {
-  .content-main__vertical {
-    display: none;
-    width: 0%;
+  .content-main__vertical .vertical-box__item .more-vertical a {
+    margin-top: 10%;
   }
 }
 
