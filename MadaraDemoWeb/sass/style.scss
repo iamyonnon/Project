@@ -1267,16 +1267,18 @@ nav {
   
   
           &:hover > a.main-thumbnail {
-            transform: scale(1.2);
+            transform: scale(1.1);
           }
   
           a.main-thumbnail {
             display: block;
             transition: all ease .5s;
+            max-width: 125px;
+            overflow: hidden;
           }
   
           a.sub-thumbnail {
-            transition: all ease .5s;
+            transition: all ease .3s;
             display: block;
             position: absolute;
             top: 0;
@@ -1525,11 +1527,20 @@ nav {
               &:hover::after {
                 opacity: 1;
               }
+              &:hover > img {
+                // -webkit-transform: scale(1.3);
+                // transform: scale(1.3);
+              }
               img {
+                // position: absolute;
                 width: 100%;
                 user-select: none;
                 max-width: 193px;
                 transition: all ease-in-out .3s;
+                // -webkit-transform: scale(1);
+                // transform: scale(1);
+                // -webkit-transition: .3s ease-in-out;
+                // transition: .3s ease-in-out;
               }
             }
 
@@ -1732,7 +1743,7 @@ nav {
         .vertical-title {
           width: 100%;
           div.rotate {
-            /* icon */ //test
+            /* icon */
             position: relative;
             background-image: linear-gradient(135deg, #eb3349 0%, #f35b43 100%);
             display: flex;

@@ -1089,14 +1089,16 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   position: relative;
 }
 .update__main .container .main-update__item .item-thumbnail:hover > a.main-thumbnail {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .update__main .container .main-update__item .item-thumbnail a.main-thumbnail {
   display: block;
   transition: all ease .5s;
+  max-width: 125px;
+  overflow: hidden;
 }
 .update__main .container .main-update__item .item-thumbnail a.sub-thumbnail {
-  transition: all ease .5s;
+  transition: all ease .3s;
   display: block;
   position: absolute;
   top: 0;
