@@ -22,6 +22,17 @@
         
         <link rel="stylesheet" href="framework/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
 
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2352331,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
     </head>
  
     <body>
@@ -196,11 +207,11 @@
                     <div class="breadcrumb">
                         <ul>
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item">/</li>
+                            <li class="breadcrumb-item select-none">/</li>
                             <li class="breadcrumb-item"><a href="#">All Mangas</a></li>
-                            <li class="breadcrumb-item">/</li>
+                            <li class="breadcrumb-item select-none">/</li>
                             <li class="breadcrumb-item"><a href="#">Ecchi</a></li>
-                            <li class="breadcrumb-item">/</li>
+                            <li class="breadcrumb-item select-none">/</li>
                             <li class="breadcrumb-item"><a href="#">Kahana no Shou</a></li>
                         </ul>
                     </div>
@@ -218,32 +229,187 @@
                         </div>
 
                         <div class="summary-content__wrapper">
-                            <div class="summary-content">
-                                <div class="post-rating">
-                                    <div class="rating-star">
-                                        <i onclick="getScore()" id="star-1" class="fas fa-star"></i>
-                                        <i onclick="getScore()" id="star-2" class="fas fa-star"></i>
-                                        <i onclick="getScore()" id="star-3" class="fas fa-star"></i>
-                                        <i onclick="getScore()" id="star-4" class="fas fa-star"></i>
-                                        <i onclick="getScore()" id="star-5" class="fas fa-star"></i>
-                                        <?=x?>
+                            <div class="wrapper-content">
+                                <div class="post-content">
+                                    <div class="rating">
+                                        <div class="rating-star">
+                                            <i onclick="getScore()" id="star-1" class="fas fa-star"></i>
+                                            <i onclick="getScore()" id="star-2" class="fas fa-star"></i>
+                                            <i onclick="getScore()" id="star-3" class="fas fa-star"></i>
+                                            <i onclick="getScore()" id="star-4" class="fas fa-star"></i>
+                                            <i onclick="getScore()" id="star-5" class="fas fa-star"></i>
+                                        </div>
+    
+                                        <div class="rating-score">
+                                            <span id="displayStar"></span>
+                                        </div>
                                     </div>
 
-                                    <div class="rating-score">
-                                        <span id="displayStar">4.2</span>
+                                    <div class="summary-content">
+                                        <div class="summary-content__item">
+                                            <div class=item-title>
+                                                <h4>Rating</h4>
+                                            </div>
+                                            <div class="item-paragraph">
+                                                <span>Average 4.4 / 5 out of 39</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="summary-content__item">
+                                            <div class=item-title>
+                                                <h4>Rank</h4>
+                                            </div>
+                                            <div class="item-paragraph">
+                                                <span>3rd, it has 167 monthly views</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="summary-content__item">
+                                            <div class=item-title>
+                                                <h4>Alternative</h4>
+                                            </div>
+                                            <div class="item-paragraph">
+                                                <span>Kounosuke</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="summary-content__item">
+                                            <div class=item-title>
+                                                <h4>Author(s)</h4>
+                                            </div>
+                                            <div class="item-paragraph">
+                                                <a href="#">KAHASHIDA Yukari</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="summary-content__item">
+                                            <div class=item-title>
+                                                <h4>Artist(s)</h4>
+                                            </div>
+                                            <div class="item-paragraph">
+                                                <a href="#">KAHASHIDA Yukari</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="summary-content__item">
+                                            <div class=item-title>
+                                                <h4>Genre(s)</h4>
+                                            </div>
+                                            <div class="item-paragraph res-6">
+                                                <span><a href="#">Ecchi</a>, <a href="#">Fantasy</a>, <a href="#">Gender Bender</a>, <a href="#">Harem</a>, <a href="#">Historical</a>, <a href="#">Horror</a></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="summary-content__item">
+                                            <div class=item-title>
+                                                <h4>Type</h4>
+                                            </div>
+                                            <div class="item-paragraph res-7">
+                                                <span>Comedy Romance Drama Historical Yaoi Mature</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="summary-content__item mobile-status">
+                                            <div class=item-title>
+                                                <h4>Release</h4>
+                                            </div>
+                                            <div class="item-paragraph">
+                                                <span>2008</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="summary-content__item mobile-status">
+                                            <div class=item-title>
+                                                <h4>Status</h4>
+                                            </div>
+                                            <div class="item-paragraph">
+                                                <span>OnGoing</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="post-status">
+                                    <div class="status-title">
+                                        <div class="status-title__item">
+                                            <h4>Release</h4>
+                                            <span>2008</span>
+                                        </div>
+                                        <div class="status-title__item">
+                                            <h4>Status</h4>
+                                            <span>OnGoing</span>
+                                        </div>
+                                    </div>
 
+                                    <div class="status_save_userData">
+                                        <div class="user-comment">
+                                            <a href="#">
+                                                <span style="color: #eb3349; font-size: 300%;" class="iconify" data-icon="ion-md-chatbubbles" data-inline="false"></span>
+                                            </a>
+                                            <p>1 comment</p>
+                                        </div>
+
+                                        <div class="user-bookmark">
+                                            <a href="#">
+                                                <span style="color: #eb3349; font-size: 250%;" class="iconify" class="iconify" data-icon="bi:bookmark-fill" data-inline="false"></span>
+                                            </a>
+                                            <p>1 Users bookmarked This</p>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="post-pagination">
-
+                                    <div class="post-pagination__content">
+                                        <div class="pagination-first">
+                                            <a href="#">Read First</a>
+                                        </div>
+    
+                                        <div class="pagination-last">
+                                            <a href="#">Read Last</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-page">
+                        <div class="main-content">
+                            <div class="main-content__title">
+                                <div class="rotate">
+                                    <i class="fas fa-star"></i>
+                                    <div></div>
+                                </div>
+                                <p>Summary</p>
+                            </div>
+    
+                            <div class="main-content__paragraph">
+                                <p>Kounosuke is the favored son of a noble family. When he is caught in a fire at the mansion, a blow to the head causes him to remember scenes from a previous life. A former Warring States Period daimyo, he had a torrid love affair with his page, Kageya. Kageya had sworn that when they were born again they would be together in the next life. But when Kounosuke wakes up, three men appear before him – all named Kageya! Can Kounosuke traverse time and be reunited again with his beloved Kageya
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aperiam perferendis totam. Dolores sed, ullam eos ratione distinctio minima, dolore itaque, aspernatur id ipsam dolor perferendis voluptatem maiores nisi dolorum.
+                            </p>
+
+                            <div class="show-more select-none">
+                                <div id="show" onclick="clickShow()"></div>
+                            </div>
+                            </div>
+                        </div>
+    
+                        <div class="main-chappter">
+    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -300,7 +466,7 @@
     <script src="framework/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 
     <!-- Icon -->
-    <!-- <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
     <!-- Main Js -->
     <script src="js/main.js"></script>

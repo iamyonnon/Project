@@ -162,6 +162,16 @@ star_5.addEventListener('click', function() {
     star_5.style.color = '#ffd900';
 })
 
-function getScore() {
 
+/* Show More and Less */
+var show = document.getElementById('show');
+// show.innerHTML = 'Show more &nbsp; <i class="fas fa-sort-down"></i>';
+
+function clickShow() {
+    if(show.innerHTML = 'Show more &nbsp; <i class="fas fa-sort-down"></i>') {
+        show.innerHTML = 'Show less &nbsp; <i class="fas fa-sort-down"></i>';
+    }
+    else {
+        show.innerHTML = 'Show more &nbsp; <i class="fas fa-sort-down"></i>';
+    }
 }
