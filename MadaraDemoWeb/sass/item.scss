@@ -1383,7 +1383,10 @@ nav {
           }
         }
 
+
+        /* MANGA RELEASES START */
         .manga-chapter {
+          user-select: text;
           p {
             color: #111;
             i {
@@ -1425,12 +1428,12 @@ nav {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 10px 0;
-                border-bottom: 1px solid #e2d7d7;
+                border-bottom: 1px solid #eedfdf;
                 a {
+                  padding: 10px 0;
                   color: #888888;
                   transition: all ease .3s;
-                  font-size: 120%;
+                  font-size: 110%;
                   text-decoration: none;
                   &:hover {
                     color: #eb3349;

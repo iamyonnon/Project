@@ -183,18 +183,6 @@ function clickShow() {
     }
 }
 
-
-/* Show chapter */
-var show_chapter = document.getElementById('show-chapter');
-show_chapter.innerHTML = "-";
-function show_Chapter() {
-    if(show_chapter.innerHTML == "-") {
-        show_chapter.innerHTML = "+"
-    }
-    else
-    show_chapter.innerHTML = "-";
-} 
-
 /* Swap chapter */
 var arr_chapter = [
     {chapter : 'Chapter 1', time : 'October 18, 2017'},
@@ -215,17 +203,60 @@ for(let i = 0; i < length_chapter; ++i) {
     stringTempArray = swap_list.innerHTML;
 }
 
+swap_list.classList.add('normal');
 
 function swapChapter() {
+    /* Add class Normal or Prev into ul */
+    if(swap_list.classList.contains('prev')) {
+        swap_list.classList.remove('prev');
+        swap_list.classList.add('normal');
+    }
+    else {
+        swap_list.classList.remove('normal');
+        swap_list.classList.add('prev');
+    }
+
     if(swap_list.innerHTML == stringTempArray) {
         swap_list.innerHTML = '';
+        
         for(let i = length_chapter - 1; i >= 0; --i) {
             swap_list.innerHTML += '<li><a href="#">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
         }
+
+        return;
     }
-    else
-        swap_list.innerHTML = '';
+    else {
+        swap_list.innerHTML = '';   
+
         for(let i = 0; i < length_chapter; ++i) {
             swap_list.innerHTML += '<li><a href="#">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
         }
+    }
 }
+
+
+/* Show chapter */
+var show_chapter = document.getElementById('show-chapter');
+show_chapter.innerHTML = "-";
+function show_Chapter() {
+    if(show_chapter.innerHTML == "-") {
+        show_chapter.innerHTML = "+"
+        swap_list.innerHTML = '';
+        return;
+    }
+    
+    else {
+        show_chapter.innerHTML = "-";
+        if(swap_list.classList.contains('normal')) {
+            for(let i = 0; i < length_chapter; ++i) {
+                swap_list.innerHTML += '<li><a href="#">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
+            }
+        }
+
+        else {
+            for(let i = 0; i < length_chapter; ++i) {
+                swap_list.innerHTML += '<li><a href="#">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
+            }
+        }
+    }
+} 
