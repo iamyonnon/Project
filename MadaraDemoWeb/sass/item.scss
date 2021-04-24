@@ -264,6 +264,7 @@ img {
   background-color: #eb3349;
   color: #fff;
 }
+
 /* 
 ---------------------------------------------
 03. Preloader
@@ -978,7 +979,7 @@ nav {
                 display: flex;
                 flex-wrap: wrap;
                 height: 100%;
-                .post-content { //test
+                .post-content {
                   display: flex;
                   flex-flow: wrap column;
                   align-items: center;
@@ -1343,9 +1344,10 @@ nav {
       }
 
       &__paragraph {
-        margin-top: 2%;
-        padding-right: 2%;
         overflow: hidden;
+        padding: 2% 2% 0 0;
+        display: block;
+        // background-color: red;
         p {
           padding: 0 -1%;
           text-align: justify;
@@ -1357,11 +1359,14 @@ nav {
       .show-more {
         width: 100%;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-        padding: 15px 0;
-        transform: translateY(-20px);
-        div {
+        padding: 15px 0 110px 0;
+        width: 102.1%;
+        transform: translateY(-130px);
+        background-color: #ffffff;
+        box-shadow: 0px -20px 20px rgba(255,255,255,.8);
+        div#show {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -1373,6 +1378,72 @@ nav {
           transition: all ease .3s;
           &:hover {
             color: #eb3349;
+          }
+          i.fa-sort-up {
+          }
+        }
+
+        .manga-chapter {
+          p {
+            color: #111;
+            i {
+              transform: rotate(90deg);
+              cursor: pointer;
+              padding: 10px 10px;
+            }
+          }
+          .chapter-title {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            a {
+              color: #111;
+              font-weight: 600;
+              transition: all ease .3s;
+              text-decoration: none;
+              &:hover {
+                color: #eb3349;
+              }
+            }
+            span {
+              background-color: #DAE1F5;
+              color: #111;
+              padding: 0px 8px;
+              font-weight: 300;
+              font-size: 130%;
+              cursor: pointer;
+              user-select: none;
+            }
+          }
+
+          .list-chapter {
+            ul {
+              padding: 0 2%;
+              border-left: 3px solid #eb3349;
+              li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 0;
+                border-bottom: 1px solid #e2d7d7;
+                a {
+                  color: #888888;
+                  transition: all ease .3s;
+                  font-size: 120%;
+                  text-decoration: none;
+                  &:hover {
+                    color: #eb3349;
+                  }
+                }
+    
+                span {
+                  text-align: justify;
+                  user-select: text;
+                  color: #888888;
+                }
+              }
+            }
           }
         }
       }

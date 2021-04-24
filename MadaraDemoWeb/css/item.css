@@ -1132,9 +1132,9 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   margin-top: .3em;
 }
 .page-content .main-page .main-content__paragraph {
-  margin-top: 2%;
-  padding-right: 2%;
   overflow: hidden;
+  padding: 2% 2% 0 0;
+  display: block;
 }
 .page-content .main-page .main-content__paragraph p {
   padding: 0 -1%;
@@ -1145,12 +1145,15 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 .page-content .main-page .main-content .show-more {
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  padding: 15px 0;
-  transform: translateY(-20px);
+  padding: 15px 0 110px 0;
+  width: 102.1%;
+  transform: translateY(-130px);
+  background-color: #ffffff;
+  box-shadow: 0px -20px 20px rgba(255, 255, 255, 0.8);
 }
-.page-content .main-page .main-content .show-more div {
+.page-content .main-page .main-content .show-more div#show {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1161,8 +1164,65 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   cursor: pointer;
   transition: all ease .3s;
 }
-.page-content .main-page .main-content .show-more div:hover {
+.page-content .main-page .main-content .show-more div#show:hover {
   color: #eb3349;
+}
+.page-content .main-page .main-content .show-more .manga-chapter p {
+  color: #111;
+}
+.page-content .main-page .main-content .show-more .manga-chapter p i {
+  transform: rotate(90deg);
+  cursor: pointer;
+  padding: 10px 10px;
+}
+.page-content .main-page .main-content .show-more .manga-chapter .chapter-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.page-content .main-page .main-content .show-more .manga-chapter .chapter-title a {
+  color: #111;
+  font-weight: 600;
+  transition: all ease .3s;
+  text-decoration: none;
+}
+.page-content .main-page .main-content .show-more .manga-chapter .chapter-title a:hover {
+  color: #eb3349;
+}
+.page-content .main-page .main-content .show-more .manga-chapter .chapter-title span {
+  background-color: #DAE1F5;
+  color: #111;
+  padding: 0px 8px;
+  font-weight: 300;
+  font-size: 130%;
+  cursor: pointer;
+  user-select: none;
+}
+.page-content .main-page .main-content .show-more .manga-chapter .list-chapter ul {
+  padding: 0 2%;
+  border-left: 3px solid #eb3349;
+}
+.page-content .main-page .main-content .show-more .manga-chapter .list-chapter ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2d7d7;
+}
+.page-content .main-page .main-content .show-more .manga-chapter .list-chapter ul li a {
+  color: #888888;
+  transition: all ease .3s;
+  font-size: 120%;
+  text-decoration: none;
+}
+.page-content .main-page .main-content .show-more .manga-chapter .list-chapter ul li a:hover {
+  color: #eb3349;
+}
+.page-content .main-page .main-content .show-more .manga-chapter .list-chapter ul li span {
+  text-align: justify;
+  user-select: text;
+  color: #888888;
 }
 
 /* 

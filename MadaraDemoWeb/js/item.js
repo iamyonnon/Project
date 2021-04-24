@@ -164,14 +164,68 @@ star_5.addEventListener('click', function() {
 
 
 /* Show More and Less */
+var divShow = document.getElementById('divShow');
 var show = document.getElementById('show');
-// show.innerHTML = 'Show more &nbsp; <i class="fas fa-sort-down"></i>';
+show.innerHTML = '<span>Show more</span> &nbsp; <i class="fas fa-sort-down"></i>';
 
 function clickShow() {
-    if(show.innerHTML = 'Show more &nbsp; <i class="fas fa-sort-down"></i>') {
-        show.innerHTML = 'Show less &nbsp; <i class="fas fa-sort-down"></i>';
+    if(show.innerHTML == '<span>Show more</span> &nbsp; <i class="fas fa-sort-down"></i>') {
+        show.innerHTML = '<span>Show less</span> &nbsp; <i class="fas fa-sort-up"></i>';
+        divShow.style.transform = 'translateY(0px)';
+        divShow.style.boxShadow = 'none';
+        divShow.style.transition = 'all ease-in-out .5s';
     }
     else {
-        show.innerHTML = 'Show more &nbsp; <i class="fas fa-sort-down"></i>';
+        show.innerHTML = '<span>Show more</span> &nbsp; <i class="fas fa-sort-down"></i>';
+        divShow.style.transform = 'translateY(-130px)';
+        divShow.style.boxShadow = '0px -20px 20px rgba(255,255,255,.8)';
+        divShow.style.transition = 'all ease-in-out .5s';
     }
+}
+
+
+/* Show chapter */
+var show_chapter = document.getElementById('show-chapter');
+show_chapter.innerHTML = "-";
+function show_Chapter() {
+    if(show_chapter.innerHTML == "-") {
+        show_chapter.innerHTML = "+"
+    }
+    else
+    show_chapter.innerHTML = "-";
+} 
+
+/* Swap chapter */
+var arr_chapter = [
+    {chapter : 'Chapter 1', time : 'October 18, 2017'},
+    {chapter : 'Chapter 2', time : 'November 15, 2019'},
+    {chapter : 'Chapter 3', time : 'October 11, 2020'},
+    {chapter : 'Chapter 4', time : 'September 24, 2021'},
+    {chapter : 'Chapter 5', time : 'October 15, 2020'},
+    {chapter : 'Chapter 6', time : 'July 08, 2019'}
+]
+
+var length_chapter = arr_chapter.length;
+
+var swap_list = document.getElementById('swap-list');
+
+var stringTempArray = [];
+for(let i = 0; i < length_chapter; ++i) {
+    swap_list.innerHTML = stringTempArray += '<li><a href="#">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
+    stringTempArray = swap_list.innerHTML;
+}
+
+
+function swapChapter() {
+    if(swap_list.innerHTML == stringTempArray) {
+        swap_list.innerHTML = '';
+        for(let i = length_chapter - 1; i >= 0; --i) {
+            swap_list.innerHTML += '<li><a href="#">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
+        }
+    }
+    else
+        swap_list.innerHTML = '';
+        for(let i = 0; i < length_chapter; ++i) {
+            swap_list.innerHTML += '<li><a href="#">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
+        }
 }

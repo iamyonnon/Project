@@ -385,6 +385,7 @@
                 <div class="col-md-12">
                     <div class="main-page">
                         <div class="main-content">
+                            
                             <div class="main-content__title">
                                 <div class="rotate">
                                     <i class="fas fa-star"></i>
@@ -398,16 +399,33 @@
                                 <br>
                                 <br>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aperiam perferendis totam. Dolores sed, ullam eos ratione distinctio minima, dolore itaque, aspernatur id ipsam dolor perferendis voluptatem maiores nisi dolorum.
-                            </p>
+                                </p>
 
-                            <div class="show-more select-none">
-                                <div id="show" onclick="clickShow()"></div>
+                                <div class="show-more select-none" id="divShow">
+                                    <div style="" id="show" onclick="clickShow()"></div>
+                                    
+                                    <!-- MANGA RELEASES  -->
+                                    <div class="manga-chapter">
+                                        <div class="main-content__title">
+                                            <div class="rotate">
+                                                <i class="fas fa-star"></i>
+                                                <div></div>
+                                            </div>
+                                            <p>LATEST MANGA RELEASES &nbsp;&nbsp;&nbsp; <i id="swap" onclick="swapChapter()" class="fas fa-exchange-alt"></i></p>
+                                        </div>
+
+                                        <div class="chapter-title">
+                                            <a href="#">Volume 1</a>    
+                                            <span id="show-chapter" onclick="show_Chapter()"></span>
+                                        </div>
+
+                                        <div class="list-chapter">
+                                            <ul id="swap-list"></ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            </div>
-                        </div>
-    
-                        <div class="main-chappter">
-    
+
                         </div>
                     </div>
                 </div>
