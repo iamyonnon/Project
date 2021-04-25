@@ -35,6 +35,7 @@ Table of contents
   box-sizing: border-box;
   font-family: 'Be Vietnam', sans-serif; 
   scroll-behavior: smooth;
+  user-select: text;
 
   &:focus {
     outline: 0;
@@ -265,6 +266,10 @@ img {
   color: #fff;
 }
 
+.bg-checkbox {
+  background-color: #eb3349;
+}
+
 /* 
 ---------------------------------------------
 03. Preloader
@@ -349,6 +354,17 @@ img {
   }
 }
 
+
+/* Check Animation */
+@keyframes check {
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 
 /* 
 ---------------------------------------------
@@ -1221,6 +1237,7 @@ nav {
   
                 .post-pagination {
                   width: 100%;
+                  padding: 2em 0;
                   &__content {
                     display: flex;
                     justify-content: flex-start;
@@ -1237,6 +1254,7 @@ nav {
                         display: flex;
                         justify-content: flex-end;
                       }
+                      
                       a {
                         color: #ffffff;
                         font-weight: 600;
@@ -1250,7 +1268,11 @@ nav {
                         }
 
                         @media only screen and(max-width: 991px) {
-                          margin: 0 2%;
+                          margin: 0 4%;
+                        }
+
+                        @include sm() {
+                          margin-right: 10%;
                         }
                       }
                     }
@@ -1262,6 +1284,7 @@ nav {
                         justify-content: flex-start;
                         white-space: nowrap;
                       }
+
                       a {
                         color: #ffffff;
                         font-weight: 600;
@@ -1274,8 +1297,8 @@ nav {
                           background-color: #111;
                         }
 
-                        @media only screen and(max-width: 991px) {
-                          margin: 0 2%;
+                        @include sm() {
+                          margin-left: 5% ;
                         }
                       }
                     }
@@ -1293,6 +1316,7 @@ nav {
 --------------------------------------------- 
 */
 .page-content {
+  border-bottom: 3px solid #ebebeb;
   .main-page {
     .main-content {
       &__title {
@@ -1347,7 +1371,6 @@ nav {
         overflow: hidden;
         padding: 2% 2% 0 0;
         display: block;
-        // background-color: red;
         p {
           padding: 0 -1%;
           text-align: justify;
@@ -1384,7 +1407,7 @@ nav {
         }
 
 
-        /* MANGA RELEASES START */
+        /* LATEST MANGA RELEASES START */
         .manga-chapter {
           user-select: text;
           p {
@@ -1449,11 +1472,285 @@ nav {
             }
           }
         }
+
+        /* MANGA DISCUSSION START */
+        .user-manipulation {
+          .user-title {
+            p {
+              color: #111;
+              white-space: nowrap;
+            }
+          }
+
+          .wrapper {
+            padding: 0 3%;
+            .user-note {
+              &__title {
+                h4 {
+                  color: #111;
+                  font-size: 130%;
+                  line-height: 30px;
+                  font-weight: 600;
+                  margin: 2% 0;
+                }
+              }
+  
+              &__paragraph {
+                p {
+                  color: #888888;
+                  line-height: 25px;
+                }
+              }
+            }
+
+            .user-type-comment {
+              textarea {
+                border: 1px solid rgba(45, 45, 45, .3);
+                border-radius: 5px; 
+                width: 100%; padding: 10px 20px 0 20px; 
+                transition: all ease .1s;
+
+                &:hover, &:focus {
+                  background-color: #f9f9f9;
+                }
+              }
+            }
+  
+            .user-infomation {
+              .get-info {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                padding: 2% 0;
+ 
+                @include sm() {
+                  flex-direction: column;
+                  padding: 0;
+                }
+
+                input {
+                  height: 50px;
+                  padding: 0 20px;
+                  width: 100%;
+                  user-select: none;
+                  border: 1px solid rgba(45,45,45,.3);
+                  border-radius: 5px;
+                  transition: all ease .1s;
+                  color: #888888;
+
+                  &:hover, &:focus {
+                    background-color: #f9f9f9;
+                  }
+
+                  @include sm() {
+                    height: 40px;
+                  }
+                }
+  
+                .left-info {
+                  width: 33.33333333333%;
+                  @include sm() {
+                    width: 100%;
+                    margin-top: 20px;
+                  }
+                }
+  
+                .center-info {
+                  width: 33.33333333333%;
+                  margin: 0 2%;
+                  @include sm() {
+                    width: 100%;
+                    margin: 20px 0;
+                  }
+                }
+  
+                .right-info {
+                  width: 33.33333333333%;
+                  @include sm() {
+                    width: 100%;
+                    margin-bottom: 30px;
+                  }
+                }
+              }
+  
+              .post-info {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                
+                @include sm() {
+                  display: flex;
+                  flex-direction: column;
+                }
+                .post-note {
+                  display: flex;
+                  flex-direction: row;
+                  width: 50%;
+
+                  @include sm() {
+                    width: 100%;
+                  }
+                  .button-check {
+                    .wrap-check { 
+                      margin-top: 30%;
+                      position: relative;
+                      border: 1px solid rgba(45,45,45,.3);
+                      width: 17px;
+                      height: 17px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      border-radius: 2px;
+                      transition: all ease .3s;
+                      input#check[type="checkbox"] {
+                        outline: none;
+                        width: 18px;
+                        height: 18px;
+                        position: absolute;
+                        z-index: 2;
+                        cursor: pointer;
+                        margin-bottom: 3px;
+                        opacity: 0;
+                      }
+  
+                      input#check[type="checkbox"]:checked + i { 
+                        animation-name: check;
+                        animation-duration: .3s;
+                        animation-fill-mode: forwards;
+                        opacity: 1;
+                      }
+  
+                      i {
+                        text-align: center;
+                        border-radius: 2px;
+                        z-index: 1;
+                        color: #ffffff;
+                        transition: all ease-in-out .3s;
+                        opacity: 0;
+                      }
+                    }
+                  }
+
+                  span {
+                    margin: 0 2%;
+                    max-width: 15em;
+                    text-align: justify;
+                    color: #888888;
+                    @include sm() {
+                      max-width: inherit  ;
+                    }
+                  }
+                }
+
+                .post-button {
+                  width: 50%;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: flex-end;
+                  justify-content: flex-end;
+
+                  @include sm() {
+                    width: 100%;
+                    margin: 5% 0;
+                  }
+                  button {
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    font-weight: 600;
+                    font-size: 100%;
+                    background-color: #eb3349;
+                    color: #ffffff;
+                    cursor: pointer;
+                    transition: all ease .3s;
+                    user-select: none;
+
+                    &:hover {
+                      background-color: #111;
+                    }
+
+                    &:active {
+                      background-color: #545D7A;
+                      transition: all ease 0s;
+                    }
+                  }
+                }
+              }
+            }
+
+            .user-comment {
+              &__title {
+                h4 {
+                  color: #111;
+                  font-weight: 600;
+                  margin-top: 5%;
+                  font-size: 140%;
+                }
+              }
+
+              &__list {
+                display: flex;
+                width: 100%;
+                margin-top: 2em;
+                .list-profile {
+                  width: 80%;
+                  display: flex;
+                  margin-top: 2em;
+
+                  &__picture {
+                    padding: 0 3em 0 0;
+                    img {
+                      border-radius: 50%;
+                    }
+                  }
+
+                  &__content {
+                    height: 100%;
+                    .user-name {
+                      h4 {
+                        display: inline-block;
+                        color: #111;
+                        font-weight: 600;
+                        font-size: 110%;
+                        margin: 0;
+                      }
+                    }
+
+                    .user-comment {
+                      p {
+                        display: inline-block;
+                        color: #66667f;
+                        margin: .2em 0;
+                        font-size: 110%;
+                      }
+                    }
+
+                    .time {
+                      span {
+                        color: #888888;
+                        font-size: 12px;
+                      }
+                    }
+                  } 
+                }
+
+                .list-reply {
+                  width: 20%;
+                  text-align: right;
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  span {
+                    cursor: pointer;
+                    font-weight: 600;
+                    line-height: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
-    }
-
-    .main-chappter {
-
     }
   }
 }
@@ -1466,8 +1763,6 @@ nav {
 --------------------------------------------- 
 */
 .footer {
-    // background-color: #f3f3f3;
-    margin-top: calc(150px);
     padding: 50px 0 70px 0;
     .footer-main {
       display: flex;
@@ -1729,3 +2024,14 @@ nav {
         }
     }
     /*End - 11.0 - Wall Ads*/
+
+
+
+    /* Title Responsive Paragraph Start */
+    .main-content__title {
+      p {
+        @include sm() {
+          margin-left: .5em;
+        }
+      }
+    }

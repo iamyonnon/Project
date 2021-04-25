@@ -33,6 +33,7 @@ Table of contents
   box-sizing: border-box;
   font-family: 'Be Vietnam', sans-serif;
   scroll-behavior: smooth;
+  user-select: text;
 }
 *:focus {
   outline: 0;
@@ -95,6 +96,10 @@ img {
 ::selection {
   background-color: #eb3349;
   color: #fff;
+}
+
+.bg-checkbox {
+  background-color: #eb3349;
 }
 
 /* 
@@ -177,6 +182,15 @@ img {
   }
   100% {
     opacity: 0;
+  }
+}
+/* Check Animation */
+@keyframes check {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 /* 
@@ -1013,6 +1027,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 }
 .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-pagination {
   width: 100%;
+  padding: 2em 0;
 }
 .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-pagination__content {
   display: flex;
@@ -1050,7 +1065,12 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 }
 @media only screen and (max-width: 991px) {
   .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-pagination__content .pagination-first a {
-    margin: 0 2%;
+    margin: 0 4%;
+  }
+}
+@media screen and (max-width: 799px) {
+  .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-pagination__content .pagination-first a {
+    margin-right: 10%;
   }
 }
 .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-pagination__content .pagination-last {
@@ -1075,9 +1095,9 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-pagination__content .pagination-last a:hover {
   background-color: #111;
 }
-@media only screen and (max-width: 991px) {
+@media screen and (max-width: 799px) {
   .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-pagination__content .pagination-last a {
-    margin: 0 2%;
+    margin-left: 5%;
   }
 }
 
@@ -1086,6 +1106,9 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 03. Profile End
 --------------------------------------------- 
 */
+.page-content {
+  border-bottom: 3px solid #ebebeb;
+}
 .page-content .main-page .main-content__title {
   /* rotate customize */
   display: flex;
@@ -1152,7 +1175,8 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   transform: translateY(-130px);
   background-color: #ffffff;
   box-shadow: 0px -20px 20px rgba(255, 255, 255, 0.8);
-  /* MANGA RELEASES START */
+  /* LATEST MANGA RELEASES START */
+  /* MANGA DISCUSSION START */
 }
 .page-content .main-page .main-content .show-more div#show {
   display: flex;
@@ -1228,6 +1252,246 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   user-select: text;
   color: #888888;
 }
+.page-content .main-page .main-content .show-more .user-manipulation .user-title p {
+  color: #111;
+  white-space: nowrap;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper {
+  padding: 0 3%;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-note__title h4 {
+  color: #111;
+  font-size: 130%;
+  line-height: 30px;
+  font-weight: 600;
+  margin: 2% 0;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-note__paragraph p {
+  color: #888888;
+  line-height: 25px;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-type-comment textarea {
+  border: 1px solid rgba(45, 45, 45, 0.3);
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 20px 0 20px;
+  transition: all ease .1s;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-type-comment textarea:hover, .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-type-comment textarea:focus {
+  background-color: #f9f9f9;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2% 0;
+}
+@media screen and (max-width: 799px) {
+  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info input {
+  height: 50px;
+  padding: 0 20px;
+  width: 100%;
+  user-select: none;
+  border: 1px solid rgba(45, 45, 45, 0.3);
+  border-radius: 5px;
+  transition: all ease .1s;
+  color: #888888;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info input:hover, .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info input:focus {
+  background-color: #f9f9f9;
+}
+@media screen and (max-width: 799px) {
+  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info input {
+    height: 40px;
+  }
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info .left-info {
+  width: 33.33333333333%;
+}
+@media screen and (max-width: 799px) {
+  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info .left-info {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info .center-info {
+  width: 33.33333333333%;
+  margin: 0 2%;
+}
+@media screen and (max-width: 799px) {
+  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info .center-info {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info .right-info {
+  width: 33.33333333333%;
+}
+@media screen and (max-width: 799px) {
+  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info .right-info {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 799px) {
+  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+@media screen and (max-width: 799px) {
+  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note {
+    width: 100%;
+  }
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note .button-check .wrap-check {
+  margin-top: 30%;
+  position: relative;
+  border: 1px solid rgba(45, 45, 45, 0.3);
+  width: 17px;
+  height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  transition: all ease .3s;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note .button-check .wrap-check input#check[type="checkbox"] {
+  outline: none;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  margin-bottom: 3px;
+  opacity: 0;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note .button-check .wrap-check input#check[type="checkbox"]:checked + i {
+  animation-name: check;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note .button-check .wrap-check i {
+  text-align: center;
+  border-radius: 2px;
+  z-index: 1;
+  color: #ffffff;
+  transition: all ease-in-out .3s;
+  opacity: 0;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note span {
+  margin: 0 2%;
+  max-width: 15em;
+  text-align: justify;
+  color: #888888;
+}
+@media screen and (max-width: 799px) {
+  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note span {
+    max-width: inherit;
+  }
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-button {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 799px) {
+  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-button {
+    width: 100%;
+    margin: 5% 0;
+  }
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-button button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 100%;
+  background-color: #eb3349;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all ease .3s;
+  user-select: none;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-button button:hover {
+  background-color: #111;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-button button:active {
+  background-color: #545D7A;
+  transition: all ease 0s;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__title h4 {
+  color: #111;
+  font-weight: 600;
+  margin-top: 5%;
+  font-size: 140%;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list {
+  display: flex;
+  width: 100%;
+  margin-top: 2em;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile {
+  width: 80%;
+  display: flex;
+  margin-top: 2em;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile__picture {
+  padding: 0 3em 0 0;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile__picture img {
+  border-radius: 50%;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile__content {
+  height: 100%;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile__content .user-name h4 {
+  display: inline-block;
+  color: #111;
+  font-weight: 600;
+  font-size: 110%;
+  margin: 0;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile__content .user-comment p {
+  display: inline-block;
+  color: #66667f;
+  margin: .2em 0;
+  font-size: 110%;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile__content .time span {
+  color: #888888;
+  font-size: 12px;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-reply {
+  width: 20%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-reply span {
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 30px;
+}
 
 /* 
 ---------------------------------------------
@@ -1235,7 +1499,6 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 --------------------------------------------- 
 */
 .footer {
-  margin-top: calc(150px);
   padding: 50px 0 70px 0;
 }
 .footer .footer-main {
@@ -1508,5 +1771,11 @@ ul.menu-dropdown__secondary li .arrow {
   }
 }
 /*End - 11.0 - Wall Ads*/
+/* Title Responsive Paragraph Start */
+@media screen and (max-width: 799px) {
+  .main-content__title p {
+    margin-left: .5em;
+  }
+}
 
 /*# sourceMappingURL=item.css.map */
