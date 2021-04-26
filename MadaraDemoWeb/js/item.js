@@ -199,7 +199,7 @@ var swap_list = document.getElementById('swap-list');
 
 var stringTempArray = [];
 for(let i = 0; i < length_chapter; ++i) {
-    swap_list.innerHTML = stringTempArray += '<li><a href="#">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
+    swap_list.innerHTML = stringTempArray += '<li><a href="chapter.html">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
     stringTempArray = swap_list.innerHTML;
 }
 
@@ -220,7 +220,7 @@ function swapChapter() {
         swap_list.innerHTML = '';
         
         for(let i = length_chapter - 1; i >= 0; --i) {
-            swap_list.innerHTML += '<li><a href="#">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
+            swap_list.innerHTML += '<li><a href="chapter.html">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
         }
 
         return;
@@ -229,7 +229,7 @@ function swapChapter() {
         swap_list.innerHTML = '';   
 
         for(let i = 0; i < length_chapter; ++i) {
-            swap_list.innerHTML += '<li><a href="#">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
+            swap_list.innerHTML += '<li><a href="chapter.html">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
         }
     }
 }
@@ -249,52 +249,14 @@ function show_Chapter() {
         show_chapter.innerHTML = "-";
         if(swap_list.classList.contains('normal')) {
             for(let i = 0; i < length_chapter; ++i) {
-                swap_list.innerHTML += '<li><a href="#">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
+                swap_list.innerHTML += '<li><a href="chapter.html">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
             }
         }
 
         else {
             for(let i = 0; i < length_chapter; ++i) {
-                swap_list.innerHTML += '<li><a href="#">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
+                swap_list.innerHTML += '<li><a href="chapter.html">' + arr_chapter[i].chapter + '</a> <span>' + arr_chapter[i].time + '</span></li>'; 
             }
         }
     }
-} 
-
-
-/* Check Animation */
-var check = document.getElementById('wrap-checkbox');
-function checkAnimation() {
-    if(check.classList.contains('bg-checkbox')) {
-        check.classList.remove('bg-checkbox');
-        check.style.border = '1px solid rgba(45,45,45,.3)';
-    }
-    else {
-        check.classList.add('bg-checkbox');
-        check.style.border = 'none';
-    }
 }
-
-
-/* Check Data Post Up Server */
-function checkDataPost() {
-    var dataComment = document.getElementById('textarea').value;
-    var dataName = document.getElementById('name').value;
-    var dataEmail = document.getElementById('email').value;
-
-    if(dataComment.length === 0) {
-        window.alert('Please Enter Your Comment!');
-        return;
-    }
-
-    if(dataName.length === 0) {
-        window.alert('Please Enter Your Name!');
-        return;
-    }
-
-    if(dataEmail.length === 0) {
-        window.alert('Please Enter Your Email!');
-        return;
-    }
-}
-

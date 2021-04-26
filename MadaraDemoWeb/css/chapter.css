@@ -219,7 +219,7 @@ img {
   white-space: nowrap;
   cursor: pointer;
   position: relative;
-  padding: 2% .5%;
+  padding: 2% 0.5%;
   /* Text Hover Animation */
   /* Menu Absolute */
   /* ab */
@@ -230,7 +230,7 @@ img {
   font-weight: bolder;
 }
 .header-aria .main-header .menu-dropdown__item::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 2px;
@@ -396,7 +396,7 @@ img {
 }
 .header-aria .main-header__search .search-icon .hamburger.active-in .top {
   animation-name: top-in;
-  animation-duration: .4s;
+  animation-duration: 0.4s;
   animation-direction: alternate;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -404,7 +404,7 @@ img {
 }
 .header-aria .main-header__search .search-icon .hamburger.active-in .mid {
   animation-name: mid-in;
-  animation-duration: .2s;
+  animation-duration: 0.2s;
   animation-direction: alternate;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -412,7 +412,7 @@ img {
 }
 .header-aria .main-header__search .search-icon .hamburger.active-in .bottom {
   animation-name: bottom-in;
-  animation-duration: .4s;
+  animation-duration: 0.4s;
   animation-direction: alternate;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -420,7 +420,7 @@ img {
 }
 .header-aria .main-header__search .search-icon .hamburger.active-out .top {
   animation-name: top-out;
-  animation-duration: .4s;
+  animation-duration: 0.4s;
   animation-direction: reverse;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -428,7 +428,7 @@ img {
 }
 .header-aria .main-header__search .search-icon .hamburger.active-out .mid {
   animation-name: mid-out;
-  animation-duration: .2s;
+  animation-duration: 0.2s;
   animation-direction: reverse;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -436,7 +436,7 @@ img {
 }
 .header-aria .main-header__search .search-icon .hamburger.active-out .bottom {
   animation-name: bottom-out;
-  animation-duration: .4s;
+  animation-duration: 0.4s;
   animation-direction: reverse;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -534,11 +534,11 @@ nav .container .main-nav__category a.nav-link {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 nav .container .main-nav__category a.nav-link:hover {
   color: #eb3349;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 nav .container .main-nav__category a.nav-link i {
   margin-left: 5px;
@@ -571,20 +571,20 @@ nav .container .main-nav a.nav-link:nth-child(1) {
 nav .container .main-nav__login .login-start a.a__login {
   border: 2px solid #666;
   border-radius: 18px;
-  padding: .3em 1.1em;
+  padding: 0.3em 1.1em;
   text-align: center;
   line-height: 20px;
   color: #666;
   text-decoration: none;
   font-weight: 600;
   font-size: 1em;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   user-select: none;
 }
 nav .container .main-nav__login .login-start a.a__login:hover {
   background-color: #111;
   color: #fff;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 @media screen and (max-width: 799px) {
   nav .container .main-nav__login .login-start a.a__login {
@@ -628,12 +628,12 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 }
 .profile-manga .container .breadcrumb ul li.breadcrumb-item a {
   text-decoration: none;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   color: #111;
 }
 .profile-manga .container .breadcrumb ul li.breadcrumb-item a:hover {
   color: #eb3349;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 .profile-manga .container .breadcrumb ul li.breadcrumb-item:not(:nth-child(1)) {
   margin: 3px 3px;
@@ -656,7 +656,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   text-align: center;
   color: #ffffff;
   border-radius: 50%;
-  font-size: .5em;
+  font-size: 0.5em;
   text-transform: uppercase;
   font-weight: bold;
   background-color: #eb3349;
@@ -745,7 +745,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   cursor: pointer;
   padding: 3px 3px;
   font-size: 120%;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-content .rating .rating-star i.fas {
   color: #ffd900;
@@ -768,7 +768,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-content .rating .rating-score {
   font-size: 1.5em;
   font-weight: 600;
-  margin: 0 .45em;
+  margin: 0 0.45em;
 }
 .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-content .summary-content {
   display: flex;
@@ -843,12 +843,12 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 }
 .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-content .summary-content__item .item-paragraph a {
   color: #111;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   text-decoration: none;
 }
 .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-content .summary-content__item .item-paragraph a:hover {
   color: #eb3349;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-status {
   display: flex;
@@ -977,7 +977,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   padding: 10px 15px;
   border-radius: 3px;
   text-decoration: none;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-pagination__content .pagination-first a:hover {
   background-color: #111;
@@ -1009,7 +1009,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   padding: 10px 15px;
   border-radius: 3px;
   text-decoration: none;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 .profile-manga .container .summary .summary-content__wrapper .wrapper-content .post-pagination__content .pagination-last a:hover {
   background-color: #111;
@@ -1027,6 +1027,11 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 */
 .page-content {
   border-bottom: 3px solid #ebebeb;
+}
+.page-content .main-page .main-content {
+  /* NAVIGATION START */
+  /* CONTENT START */
+  /* MANGA DISCUSSION START */
 }
 .page-content .main-page .main-content__title {
   /* rotate customize */
@@ -1056,9 +1061,9 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 }
 .page-content .main-page .main-content__title div.rotate div {
   position: absolute;
-  width: .8em;
-  height: .8em;
-  right: -.3em;
+  width: 0.8em;
+  height: 0.8em;
+  right: -0.3em;
   top: 35%;
   transform: rotate(45deg);
   background-image: linear-gradient(135deg, #f35b43 0%, #eb3349 100%);
@@ -1071,215 +1076,243 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   white-space: nowrap;
   letter-spacing: 1px;
   line-height: 2em;
-  margin-top: .3em;
+  margin-top: 0.3em;
 }
-.page-content .main-page .main-content__paragraph {
-  overflow: hidden;
-  padding: 2% 2% 0 0;
-  display: block;
-}
-.page-content .main-page .main-content__paragraph p {
-  padding: 0 -1%;
-  text-align: justify;
-  line-height: 30px;
-  color: #888888;
-}
-.page-content .main-page .main-content .show-more {
+.page-content .main-page .main-content .nav .title {
   width: 100%;
+  text-align: left;
+}
+.page-content .main-page .main-content .nav .title h4 {
+  color: #111;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.page-content .main-page .main-content .nav .breadcrumb {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  padding: 0;
+  margin-top: 10em 0 1em 0;
+}
+.page-content .main-page .main-content .nav .breadcrumb ul {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 5px 0;
+}
+.page-content .main-page .main-content .nav .breadcrumb ul li {
+  color: #888888;
+  margin: 0;
+  padding: 0;
+}
+.page-content .main-page .main-content .nav .breadcrumb ul li a {
+  color: #888888;
+  padding: 5px 6px;
+  text-decoration: none;
+  transition: all ease .3s;
+  margin: 0;
+}
+.page-content .main-page .main-content .nav .breadcrumb ul li a:hover {
+  color: #eb3349;
+}
+.page-content .main-page .main-content .nav .navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+.page-content .main-page .main-content .nav .navigation .nav-chapter {
+  width: 50%;
+}
+.page-content .main-page .main-content .nav .navigation .nav-chapter select {
+  position: relative;
+  background-color: #ebebeb;
+  color: #888888;
+  padding: 8px 15px;
+  border-radius: 5px;
+  appearance: none;
+  cursor: pointer;
+  transition: all ease .3s;
+}
+.page-content .main-page .main-content .nav .navigation .nav-chapter select:after {
+  content: '\25BC';
+  position: absolute;
+}
+.page-content .main-page .main-content .nav .navigation .nav-chapter select:hover {
+  background-color: #f3f3f3;
+}
+.page-content .main-page .main-content .nav .navigation .nav-button {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.page-content .main-page .main-content .nav .navigation .nav-button button {
+  margin: 0 .3em;
+  padding: 0 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #eb3349;
+  color: #ffffff;
+  font-size: 1.16em;
+  transition: all ease .3s;
+}
+.page-content .main-page .main-content .nav .navigation .nav-button button:hover {
+  background-color: #111;
+}
+.page-content .main-page .main-content .main-content .ads {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6em 0;
+}
+.page-content .main-page .main-content .main-content .ads img {
+  max-width: 790px;
+  width: 100%;
+}
+.page-content .main-page .main-content .main-content .content-item {
+  width: 100%;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15px 0 110px 0;
-  width: 102.1%;
-  transform: translateY(-130px);
-  background-color: #ffffff;
-  box-shadow: 0px -20px 20px rgba(255, 255, 255, 0.8);
-  /* LATEST MANGA RELEASES START */
-  /* MANGA DISCUSSION START */
 }
-.page-content .main-page .main-content .show-more div#show {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #111;
-  font-weight: 600;
-  font-size: 1.3em;
-  transition: all ease .3s;
+.page-content .main-page .main-content .main-content .content-item .page-item {
+  margin: 1em 0;
+}
+.page-content .main-page .main-content .main-content .content-item .page-item img {
   cursor: pointer;
-  transition: all ease .3s;
+  width: 100%;
+  max-width: 850px;
 }
-.page-content .main-page .main-content .show-more div#show:hover {
-  color: #eb3349;
-}
-.page-content .main-page .main-content .show-more .manga-chapter {
-  user-select: text;
-}
-.page-content .main-page .main-content .show-more .manga-chapter p {
-  color: #111;
-}
-.page-content .main-page .main-content .show-more .manga-chapter p i {
-  transform: rotate(90deg);
-  cursor: pointer;
-  padding: 10px 10px;
-}
-.page-content .main-page .main-content .show-more .manga-chapter .chapter-title {
+.page-content .main-page .main-content .main-content .nav-button {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
+  justify-content: flex-end;
 }
-.page-content .main-page .main-content .show-more .manga-chapter .chapter-title a {
-  color: #111;
-  font-weight: 600;
-  transition: all ease .3s;
-  text-decoration: none;
-}
-.page-content .main-page .main-content .show-more .manga-chapter .chapter-title a:hover {
-  color: #eb3349;
-}
-.page-content .main-page .main-content .show-more .manga-chapter .chapter-title span {
-  background-color: #DAE1F5;
-  color: #111;
-  padding: 0px 8px;
-  font-weight: 300;
-  font-size: 130%;
+.page-content .main-page .main-content .main-content .nav-button button {
+  margin: 0 .3em;
+  padding: .4em 20px;
   cursor: pointer;
-  user-select: none;
-}
-.page-content .main-page .main-content .show-more .manga-chapter .list-chapter ul {
-  padding: 0 2%;
-  border-left: 3px solid #eb3349;
-}
-.page-content .main-page .main-content .show-more .manga-chapter .list-chapter ul li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #eedfdf;
-}
-.page-content .main-page .main-content .show-more .manga-chapter .list-chapter ul li a {
-  padding: 10px 0;
-  color: #888888;
+  border-radius: 3px;
+  background-color: #eb3349;
+  color: #ffffff;
+  font-size: 1.16em;
   transition: all ease .3s;
-  font-size: 110%;
-  text-decoration: none;
 }
-.page-content .main-page .main-content .show-more .manga-chapter .list-chapter ul li a:hover {
-  color: #eb3349;
+.page-content .main-page .main-content .main-content .nav-button button:hover {
+  background-color: #111;
 }
-.page-content .main-page .main-content .show-more .manga-chapter .list-chapter ul li span {
-  text-align: justify;
-  user-select: text;
-  color: #888888;
-}
-.page-content .main-page .main-content .show-more .user-manipulation .user-title p {
+.page-content .main-page .main-content .user-manipulation .user-title p {
   color: #111;
   white-space: nowrap;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper {
+.page-content .main-page .main-content .user-manipulation .wrapper {
   padding: 0 3%;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-note__title h4 {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-note__title h4 {
   color: #111;
   font-size: 130%;
   line-height: 30px;
   font-weight: 600;
   margin: 2% 0;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-note__paragraph p {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-note__paragraph p {
   color: #888888;
   line-height: 25px;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-type-comment textarea {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-type-comment textarea {
   border: 1px solid rgba(45, 45, 45, 0.3);
   border-radius: 5px;
   width: 100%;
   padding: 10px 20px 0 20px;
-  transition: all ease .1s;
+  transition: all ease 0.1s;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-type-comment textarea:hover, .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-type-comment textarea:focus {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-type-comment textarea:hover, .page-content .main-page .main-content .user-manipulation .wrapper .user-type-comment textarea:focus {
   background-color: #f9f9f9;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .get-info {
   width: 100%;
   display: flex;
   flex-direction: row;
   padding: 2% 0;
 }
 @media screen and (max-width: 799px) {
-  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info {
+  .page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .get-info {
     flex-direction: column;
     padding: 0;
   }
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info input {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .get-info input {
   height: 50px;
   padding: 0 20px;
   width: 100%;
   user-select: none;
   border: 1px solid rgba(45, 45, 45, 0.3);
   border-radius: 5px;
-  transition: all ease .1s;
+  transition: all ease 0.1s;
   color: #888888;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info input:hover, .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info input:focus {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .get-info input:hover, .page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .get-info input:focus {
   background-color: #f9f9f9;
 }
 @media screen and (max-width: 799px) {
-  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info input {
+  .page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .get-info input {
     height: 40px;
   }
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info .left-info {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .get-info .left-info {
   width: 33.33333333333%;
 }
 @media screen and (max-width: 799px) {
-  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info .left-info {
+  .page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .get-info .left-info {
     width: 100%;
     margin-top: 20px;
   }
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info .center-info {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .get-info .center-info {
   width: 33.33333333333%;
   margin: 0 2%;
 }
 @media screen and (max-width: 799px) {
-  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info .center-info {
+  .page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .get-info .center-info {
     width: 100%;
     margin: 20px 0;
   }
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info .right-info {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .get-info .right-info {
   width: 33.33333333333%;
 }
 @media screen and (max-width: 799px) {
-  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .get-info .right-info {
+  .page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .get-info .right-info {
     width: 100%;
     margin-bottom: 30px;
   }
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
 }
 @media screen and (max-width: 799px) {
-  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info {
+  .page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info {
     display: flex;
     flex-direction: column;
   }
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-note {
   display: flex;
   flex-direction: row;
   width: 50%;
 }
 @media screen and (max-width: 799px) {
-  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note {
+  .page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-note {
     width: 100%;
   }
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note .button-check .wrap-check {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-note .button-check .wrap-check {
   margin-top: 30%;
   position: relative;
   border: 1px solid rgba(45, 45, 45, 0.3);
@@ -1289,9 +1322,9 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note .button-check .wrap-check input#check[type="checkbox"] {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-note .button-check .wrap-check input#check[type='checkbox'] {
   outline: none;
   width: 18px;
   height: 18px;
@@ -1301,32 +1334,32 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   margin-bottom: 3px;
   opacity: 0;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note .button-check .wrap-check input#check[type="checkbox"]:checked + i {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-note .button-check .wrap-check input#check[type='checkbox']:checked + i {
   animation-name: check;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
   opacity: 1;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note .button-check .wrap-check i {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-note .button-check .wrap-check i {
   text-align: center;
   border-radius: 2px;
   z-index: 1;
   color: #ffffff;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 0.3s;
   opacity: 0;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note span {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-note span {
   margin: 0 2%;
   max-width: 15em;
   text-align: justify;
   color: #888888;
 }
 @media screen and (max-width: 799px) {
-  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-note span {
+  .page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-note span {
     max-width: inherit;
   }
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-button {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-button {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -1334,12 +1367,12 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   justify-content: flex-end;
 }
 @media screen and (max-width: 799px) {
-  .page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-button {
+  .page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-button {
     width: 100%;
     margin: 5% 0;
   }
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-button button {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-button button {
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: 600;
@@ -1347,106 +1380,106 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   background-color: #eb3349;
   color: #ffffff;
   cursor: pointer;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   user-select: none;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-button button:hover {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-button button:hover {
   background-color: #111;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-infomation .post-info .post-button button:active {
-  background-color: #545D7A;
+.page-content .main-page .main-content .user-manipulation .wrapper .user-infomation .post-info .post-button button:active {
+  background-color: #545d7a;
   transition: all ease 0s;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__title h4 {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-comment__title h4 {
   color: #111;
   font-weight: 600;
   margin-top: 5%;
   font-size: 140%;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-comment__list {
   display: flex;
   width: 100%;
   margin-top: 2em;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-comment__list .list-profile {
   width: 80%;
   display: flex;
   margin-top: 2em;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile__picture {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-comment__list .list-profile__picture {
   padding: 0 3em 0 0;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile__picture img {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-comment__list .list-profile__picture img {
   border-radius: 50%;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile__content {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-comment__list .list-profile__content {
   height: 100%;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile__content .user-name h4 {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-comment__list .list-profile__content .user-name h4 {
   display: inline-block;
   color: #111;
   font-weight: 600;
   font-size: 110%;
   margin: 0;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile__content .user-comment p {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-comment__list .list-profile__content .user-comment p {
   display: inline-block;
   color: #66667f;
-  margin: .2em 0;
+  margin: 0.2em 0;
   font-size: 110%;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-profile__content .time span {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-comment__list .list-profile__content .time span {
   color: #888888;
   font-size: 12px;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-reply {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-comment__list .list-reply {
   width: 20%;
   text-align: right;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.page-content .main-page .main-content .show-more .user-manipulation .wrapper .user-comment__list .list-reply span {
+.page-content .main-page .main-content .user-manipulation .wrapper .user-comment__list .list-reply span {
   cursor: pointer;
   font-weight: 600;
   line-height: 30px;
 }
-.page-content .main-page .main-content .show-more .pagination-wrap {
+.page-content .main-page .main-content .pagination-wrap {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.page-content .main-page .main-content .show-more .pagination-wrap .pagination {
+.page-content .main-page .main-content .pagination-wrap .pagination {
   display: flex;
   width: 20em;
   justify-content: center;
   margin-top: 5em;
 }
-.page-content .main-page .main-content .show-more .pagination-wrap .pagination ul {
+.page-content .main-page .main-content .pagination-wrap .pagination ul {
   display: flex;
   height: 100%;
 }
-.page-content .main-page .main-content .show-more .pagination-wrap .pagination ul li {
+.page-content .main-page .main-content .pagination-wrap .pagination ul li {
   height: 100%;
   display: inline-block;
 }
-.page-content .main-page .main-content .show-more .pagination-wrap .pagination ul li a {
+.page-content .main-page .main-content .pagination-wrap .pagination ul li a {
   display: inline-block;
   padding: 8px 15px;
   text-decoration: none;
   color: #111;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
-.page-content .main-page .main-content .show-more .pagination-wrap .pagination ul li a:hover {
+.page-content .main-page .main-content .pagination-wrap .pagination ul li a:hover {
   background-color: #eb3349;
   color: #ffffff;
 }
-.page-content .main-page .main-content .show-more .pagination-wrap .pagination ul li.border-normal:nth-child(1) {
+.page-content .main-page .main-content .pagination-wrap .pagination ul li.border-normal:nth-child(1) {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-.page-content .main-page .main-content .show-more .pagination-wrap .pagination ul li.border-normal:nth-last-child(1) {
+.page-content .main-page .main-content .pagination-wrap .pagination ul li.border-normal:nth-last-child(1) {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
@@ -1497,14 +1530,14 @@ nav .container .main-nav__login .login-start a.a__login:hover {
   font-size: 1.11em;
   text-decoration: none;
   cursor: pointer;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   font-weight: 300;
   text-align: justify;
   white-space: nowrap;
 }
 .footer .footer-main ul li a:hover {
   color: #eb3349;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 @media screen and (max-width: 799px) {
   .footer .footer-main ul li a {
@@ -1518,7 +1551,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 }
 @media screen and (max-width: 799px) {
   .footer .footer-main ul li span {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 .footer .footer-main .coppyright p {
@@ -1528,7 +1561,7 @@ nav .container .main-nav__login .login-start a.a__login:hover {
 }
 @media screen and (max-width: 799px) {
   .footer .footer-main .coppyright p {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
 
@@ -1644,7 +1677,8 @@ ul.menu-dropdown__secondary li .arrow {
   overflow: hidden !important;
 }
 
-.owl-prev, .owl-next {
+.owl-prev,
+.owl-next {
   display: none !important;
   visibility: hidden !important;
 }
@@ -1732,8 +1766,8 @@ ul.menu-dropdown__secondary li .arrow {
 /* Title Responsive Paragraph Start */
 @media screen and (max-width: 799px) {
   .main-content__title p {
-    margin-left: .5em;
+    margin-left: 0.5em;
   }
 }
 
-/*# sourceMappingURL=item.css.map */
+/*# sourceMappingURL=chapter.css.map */
