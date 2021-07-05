@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="framework/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="framework/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+</head> 
+<body>
+<div class="nav">
+    <div class="container">
+        <div class="row">
+                <div class="col-md-4 col4-nav">
+                    <div class="call">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:1900633349">1900633349</a>
+                    </div>
+                    <span>|</span>
+                    <div class="email">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:mwcshop@gmail.com">mwcshop@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-8 col8-nav">
+                    <div class="nav-right">
+                        <ul>
+                            <li><a href="#">giới thiệu</a></li>
+                            <li><a href="#">chính sách bảo hành trọn đời<i></i></a></li>
+                            <li><a href="#">giao hàng toàn quốc</a></li>
+                            <li><a href="#">than phiền góp ý</a></li>
+                            <li onclick="menu()" id="li-right">
+                                <i class="fas fa-angle-double-down"></i>
+                                <ul id="ul-ab" class="ul-ab">
+                                    <li class="li-ab"><a href="#">danh sách cửa hàng</a></li>
+                                    <li class="li-ab"><a href="#">cách đo size</a></li>
+                                    <li class="li-ab"><a href="#">chính sách đổi trả</a></li>
+                                    <li class="li-ab"><a href="#">chính sách bảo mật thông tin</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu">
+    <div class="container sticky">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="logo-desktop">
+                    <a href="#"><img src="img/logo.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <ul>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/giaynu.png" alt="">
+                                <p>giày nữ</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">giày thể thao</a></li>
+                            <li><a href="#">giày cao gót</a></li>
+                            <li><a href="#">sandal nữ</a></li>
+                            <li><a href="#">giày búp bê và mọi</a></li>
+                            <li><a href="#">giày lưới</a></li>
+                            <li><a href="#">giày oxford & boot</a></li>
+                            <li><a href="#">dép sục</a></li>
+                            <li><a href="#">dép nữ</a></li>
+                        </ul>
+                    </li>
+
+                    <li>                        
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/giaynam.png" alt="">
+                                <p>giày nam</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">giày thể thao nam</a></li>
+                            <li><a href="#">mọi & slip on</a></li>
+                            <li><a href="#">sandal & dép</a></li>
+                            <li><a href="#">boot</a></li>
+                        </ul>
+                    </li>
+                   
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/sale79.png" alt="">
+                                <p>sale 79k</p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/sale100150.png" alt="">
+                                <p>sale 100k</p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/sale100150.png" alt="">
+                                <p>sale 150k</p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/aokhoac.png" alt="">
+                                <p>áo khoác</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">áo khoác nữ</a></li>
+                            <li><a href="#">áo khoác cặp</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/balo.png" alt="">
+                                <p>balo-túi</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">túi đeo chéo</a></li>
+                            <li><a href="#">balo laptop, du lịch, thời trang</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/ao.png" alt="">
+                                <p>đồ tập gym, yoga</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">áo bra</a></li>
+                            <li><a href="#">áp croptop</a></li>
+                            <li><a href="#">áo tanktop</a></li>
+                            <li><a href="#">áo thun tay ngắn</a></li>
+                            <li><a href="#">quần lửng</a></li>
+                            <li><a href="#">quần dài</a></li>
+                            <li><a href="#">quần short</a></li>
+                            <li><a href="#">quần jogger</a></li>
+                            <li><a href="#">set bộ</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/phukien.jpg" alt="">
+                                <p>phụ kiện</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">vớ</a></li>
+                            <li><a href="#">chai vệ sinh giày</a></li>
+                            <li><a href="#">dây giày</a></li>
+                            <li><a href="#">đế lót</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i id="cart" class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="">
+                            <div class="form">
+                                <input type="text" placeholder="Bạn muốn tìm gì...">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>ĐẶT HÀNG NHANH: <b>1900633349</b></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb break">
+                <li class="breadcrumb-item">Trang chủ</li>
+                <li class="breadcrumb-item">Giày nam</li>
+            </ol>
+        </nav>
+</div>
+
+</body> 
+</html>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="framework/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> 

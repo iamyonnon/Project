@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="framework/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="framework/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+</head> 
+<body>
+<div class="nav">
+    <div class="container">
+        <div class="row">
+                <div class="col-md-4 col4-nav">
+                    <div class="call">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:1900633349">1900633349</a>
+                    </div>
+                    <span>|</span>
+                    <div class="email">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:mwcshop@gmail.com">mwcshop@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-8 col8-nav">
+                    <div class="nav-right">
+                        <ul class="ul-re">
+                            <li><a href="#">giới thiệu</a></li>
+                            <li><a href="#">chính sách bảo hành trọn đời<i></i></a></li>
+                            <li><a href="#">giao hàng toàn quốc</a></li>
+                            <li><a href="#">than phiền góp ý</a></li>
+                            <li onclick="menu()" id="li-right">
+                                <i class="fas fa-angle-double-down"></i>
+                                <ul id="ul-ab" class="ul-ab">
+                                    <li class="li-ab"><a href="#">danh sách cửa hàng</a></li>
+                                    <li class="li-ab"><a href="#">cách đo size</a></li>
+                                    <li class="li-ab"><a href="#">chính sách đổi trả</a></li>
+                                    <li class="li-ab"><a href="#">chính sách bảo mật thông tin</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu">
+    <div class="container sticky">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="logo-desktop">
+                    <a href="#"><img src="img/logo.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <ul>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/giaynu.png" alt="">
+                                <p>giày nữ</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">giày thể thao</a></li>
+                            <li><a href="#">giày cao gót</a></li>
+                            <li><a href="#">sandal nữ</a></li>
+                            <li><a href="#">giày búp bê và mọi</a></li>
+                            <li><a href="#">giày lưới</a></li>
+                            <li><a href="#">giày oxford & boot</a></li>
+                            <li><a href="#">dép sục</a></li>
+                            <li><a href="#">dép nữ</a></li>
+                        </ul>
+                    </li>
+
+                    <li>                        
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/giaynam.png" alt="">
+                                <p>giày nam</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">giày thể thao nam</a></li>
+                            <li><a href="#">mọi & slip on</a></li>
+                            <li><a href="#">sandal & dép</a></li>
+                            <li><a href="#">boot</a></li>
+                        </ul>
+                    </li>
+                   
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/sale79.png" alt="">
+                                <p>sale 79k</p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/sale100150.png" alt="">
+                                <p>sale 100k</p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/sale100150.png" alt="">
+                                <p>sale 150k</p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/aokhoac.png" alt="">
+                                <p>áo khoác</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">áo khoác nữ</a></li>
+                            <li><a href="#">áo khoác cặp</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/balo.png" alt="">
+                                <p>balo-túi</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">túi đeo chéo</a></li>
+                            <li><a href="#">balo laptop, du lịch, thời trang</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/ao.png" alt="">
+                                <p>đồ tập gym, yoga</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">áo bra</a></li>
+                            <li><a href="#">áp croptop</a></li>
+                            <li><a href="#">áo tanktop</a></li>
+                            <li><a href="#">áo thun tay ngắn</a></li>
+                            <li><a href="#">quần lửng</a></li>
+                            <li><a href="#">quần dài</a></li>
+                            <li><a href="#">quần short</a></li>
+                            <li><a href="#">quần jogger</a></li>
+                            <li><a href="#">set bộ</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="icon-menu">
+                            <a href="#">
+                                <img src="img/phukien.jpg" alt="">
+                                <p>phụ kiện</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">vớ</a></li>
+                            <li><a href="#">chai vệ sinh giày</a></li>
+                            <li><a href="#">dây giày</a></li>
+                            <li><a href="#">đế lót</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i id="cart" class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="">
+                            <div class="form">
+                                <input type="text" placeholder="Bạn muốn tìm gì...">
+                                <a href="#"><i class="fas fa-search"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>ĐẶT HÀNG NHANH: <b>1900633349</b></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="owl-carousel owl-theme" id="slide1">
+        <div class="item">
+            <img src="img/banner-web-1.jpg" alt="">
+        </div>
+
+        <div class="item">
+            <img src="img/118965346-630863841182596-5532634749623022794-n.jpg" alt="">
+        </div>
+
+        <div class="item">
+            <img src="img/sale2-9.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+
+    <div class="container content">
+        <div class="row row-content">
+            <div class="col-md-6">
+                <div class="left">
+                    <!-- 1 -->
+                    <div class="border-left-item">
+                        <div class="content-left-item">
+                            <a href="#">
+                                <h4>Bắt trend 5 mẫu Sneaker đáng mua nhất tại mwc</h4>
+                                <img src="img/body1.jpg" alt="">
+                            </a>
+                            <p>
+                                Những đôi sneaker xinh xắn luôn là món thời trang không thể thiếu trong tủ đồ của mọi cô gái. Không quá cầu kì về hình thức nhưng lại dễ dàng phối hợp với bất kỳ phong cách thời trang nào. Hãy cùng MWC điểm qua 5 mẫu giày hot nhất tại shop nhé
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="border-left-item">
+                        <div class="content-left-item">
+                            <a href="#">
+                                <h4>10 MẪU SNEAKER NÀNG KHÔNG NÊN BỎ LỠ DỊP CUỐI NĂM</h4>
+                                <img src="img/body2.jpg" alt="">
+                            </a>
+                            <p>
+                                Nhu cầu mua sắm giày sneaker cuối năm tại tất cả cửa hàng MWC luôn rất tất bật và sôi nổi nhằm mong muốn có thể "tậu" cho mình được những mẫu giày thích hợp với trang phục. Vậy bạn đã chuẩn bị bao nhiêu đôi trong tủ giày của mình rồi nhỉ . Nếu chưa thì hãy để MWC cập nhật giúp bạn nhé <3
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- 3 -->
+                    <div class="border-left-item">
+                        <div class="content-left-item">
+                            <a href="#">
+                                <h4>SNEAKER ĐẾ ĐỘN VŨ KHÍ CHO NÀNG NẤM LÙN</h4>
+                                <img src="img/body3.jpg" alt="">
+                            </a>
+                            <p>
+                                Giày thể thao cũng không kém giày cao gót trong việc cải thiện chiều cao và tôn dáng cho những cô nàng nấm lùn, nó giúp nàng cải thiện đáng kể vóc dáng đấy ạ .Hãy cùng nhau tham khảo những mẫu giày đế độn tại MWC dành riêng cho nàng nấm lùng nhé <3
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 4 -->
+                    <div class="border-left-item">
+                        <div class="content-left-item">
+                            <a href="#">
+                                <h4>5 KIỂU SANDAL CHO NÀNG CÔNG SỞ</h4>
+                                <img src="img/body4.jpg" alt="">
+                            </a>
+                            <p>
+                                Lựa chọn giày đi làm cũng là câu chuyện khiến nhiều cô nàng đau đầu. Giày mang đi cần sự đơn giản, thoải mái, dễ đi nhưng cũng không được bỏ qua yếu tố thanh lịch, sang trọng. Nên chọn loại giày sandal nào mới thỏa mãn các điều kiện trên, cùng MWC tìm hiểu nhé!
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    
+
+                    <!-- 5 -->
+                    <div class="border-left-item">
+                        <div class="content-left-item">
+                            <a href="#">
+                                <h4>GIÀY TRẮNG CÓ LÀM BẠN SAY NẮNG ?</h4>
+                                <img src="img/body4.jpg" alt="">
+                            </a>
+                            <p>
+                                Chào hè với giày sneakers trắng, đảm bảo nàng sẽ chinh phục được mọi phong cách! Giày sneakers trắng là giày dễ phối đồ nhất với quần áo. Phái đẹp có thể diện những đôi giày thể thao trắng mix tự do với bất kì trang phục nào từ style văn phòng thanh lịch cho đến năng động cá tính.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div id="bg"></div>
+            <div class="col-md-6">
+                <div class="right">
+                    <!-- 1 -->
+                    <div class="border-right-item">
+                        <div class="content-right-item">
+                            <a href="#">
+                                <h4>PHÁT SỐT VỚI BỘ SƯU TẬP BALO HÀN QUỐC TẠI MWC</h4>
+                                <img src="img/6.jpg" alt="">
+                            </a>
+                            <p>
+                                Mãn nhãn với rất nhiều mẫu balo Hàn Quốc đẹp và dễ thương, thỏa sức cho các bạn nữ lựa chọn cho mình mẫu ba lô Hàn Quốc ưng ý nhất chỉ có tại MWC với mẫu mới được cập nhật liên tục phù hợp với thị hiếu giới trẻ, cùng MWC điểm qua nào !
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 2 -->
+                    <div class="border-right-item">
+                        <div class="content-right-item">
+                            <a href="#">
+                                <h4>UPDATE NGÀY 9 MẪU SANDAL ĐẾ BỆT HOT NHẤT MÙA NÀY</h4>
+                                <img src="img/7.jpg" alt="">
+                            </a>
+                            <p>
+                                Một trong những điều tuyệt vời thoải mái nhất cho đôi chân là có thể giải phóng bàn chân khỏi đôi giày bức bí và tha hồ diện những đôi sandal mát mẻ. Sau đây là 10 kiểu sandal đế bệt "hot" nhất mà bạn không thể bỏ qua dịp này tại MWC.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    
+                    <!-- 3 -->
+                    <div class="border-right-item">
+                        <div class="content-right-item">
+                            <a href="#">
+                                <h4>MẪU GIÀY BÚP BÊ MWC KHIẾN NÀNG MÊ MỆT</h4>
+                                <img src="img/8.jpg" alt="">
+                            </a>
+                            <p>
+                                Búp bê là một mẫu giày xuất hiện từ lâu trên thị trường giày dép và luôn là một sản phẩm được lựa chọn hàng đầu. Chúng ta thường biết đến giày búp bê là một mẫu giày đơn giản nhưng không thiếu sự tinh tế. Năm nay MWC sẽ mang đến cho nàng hàng loạt mẫu búp bê sẽ khiến nàng không thể rời mắt luôn ạ!
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 4 -->
+                    <div class="border-right-item">
+                        <div class="content-right-item">
+                            <a href="#">
+                                <h4>CÙNG MWC BẮT TREND GIÀY HOA CÚC</h4>
+                                <img src="img/9.jpg" alt="">
+                            </a>
+                            <p>
+                                Gần đây, cộng đồng HOT rần rần về mẫu giày hoa cúc, không nằm ngoài xu hướng MWC cho ra mắt hàng loạt sản phẩm cùng các bản phối màu ngọt ngào mới toanh được trang trí nữ tính, đáng yêu với phụ kiện từ dây giày, hình thêu hay dây đeo đều theo concept hoa cúc.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 5 -->
+                    <div class="border-right-item">
+                        <div class="content-right-item">
+                            <a href="#">
+                                <h4>BỘ SƯU TẬP GIÀY MÀU NUDE CHO NÀNG SÀNH ĐIỆU</h4>
+                                <img src="img/10.jpg" alt="">
+                            </a>
+                            <p>
+                                Màu kem được biết đến là một gam màu trung tính, là màu sắc được yêu thích bậc nhất của trong những năm gần đây. Không chỉ dừng lại ở đây, giày khá trùng với màu da nên luôn tạo ra cảm giác đôi chân của các nàng được kéo dài thêm vài phần. Đến với MWC với bộ sưu tập giày nude với đầy đủ sự lựa chọn cho nàng luôn nhé
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- more -->
+    <div class="more">
+        <div class="row row-more">
+            <div class="content-more">
+                <a href="#">
+                    <i class="fas fa-sync-alt"></i>    
+                    Xem thêm nhiều tin khác
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="logo-footer">
+                <img src="img/logo-footer.png" alt="">
+                <h3>MWC “LỰA CHỌN HOÀN HẢO”</h3>
+            </div>
+            
+            <div class="content-top-footer">
+                <div class="row">
+                    <!-- left -->
+                    <div class="col-md-6 left-content-top-footer">
+                        <div class="item-top-footer">
+                            <h5>Chất lượng</h5>
+                            <p>MWC đảm bảo chất lượng cho tất cả sản phẩm bán tại Store MWC bằng chính sách bảo hành vĩnh viễn.</p>
+                        </div>
+        
+                        <div class="item-top-footer">
+                            <h5>Phục vụ</h5>
+                            <p>MWC cam kết chất lượng phục vụ tốt nhất, chuyên nghiệp nhất cho mọi khách hàng bằng chính sách hoàn tiền và tặng quà nếu nhân viên phục vụ quí khách không chu đáo.</p>
+                        </div>
+        
+                        <div class="item-top-footer">
+                            <h5>Hỗ trợ</h5>
+                            <p>Nếu bạn gặp rắc rối về sản phẩm hay chất lượng dịch vụ của MWC, hãy gọi ngay đến số 0967027393 hoặc inbox ở fanpage <a href="http://facebook.com/www.mwc.vn">facebook.com/www.mwc.vn</a></p>
+                        </div>
+                    </div>
+        
+                    <!-- center -->
+                    <div class="col-md-3 center-content-top-footer">
+                        <p>Đặt hàng và thu tiền tận nơi toàn quốc</p>
+                        <a id="a-center" href="#">
+                            <i id='i-call' class="fas fa-phone-square"></i>
+                            1900633349 
+                        </a>
+                        <h5>Thông tin</h5>
+                        <div class="item-center-top">
+                            <a href="#" class="a-item">
+                                <i class="fas fa-chevron-right"></i> 
+                                Giới thiệu về MWC
+                            </a>
+                            <a href="#" class="a-item">
+                                <i class="fas fa-chevron-right"></i> 
+                                Tuyển dụng
+                            </a>
+                            <a href="#" class="a-item">
+                                <i class="fas fa-chevron-right"></i> 
+                                Qui chế hoạt động
+                            </a>
+                            <a href="#" class="a-item">
+                                <i class="fas fa-chevron-right"></i> 
+                                Chính sách và quy định
+                            </a>
+                        </div>
+                    </div>
+        
+                    <!-- right -->
+                    <div class="col-md-3 right-content-top-footer">
+                        <div class="right-content-top">
+                            <h5>CSKH</h5>
+                            <a id="a-color-right" href="#">Than phiền/Chăm sóc khách hàng</a>
+                        </div>
+    
+                        <div class="right-content-bottom">
+                            <h5>FAQ</h5>
+                            <div class="item-center-top">
+                                <a href="#" class="a-item">
+                                    <i class="fas fa-chevron-right"></i> 
+                                    Vận chuyển
+                                </a>
+                                <a href="#" class="a-item">
+                                    <i class="fas fa-chevron-right"></i> 
+                                    Chính sách đổi trả
+                                </a>
+                                <a href="#" class="a-item">
+                                    <i class="fas fa-chevron-right"></i> 
+                                    Chính sách bảo hành
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- hr -->
+
+
+        <div id="hr"></div>
+
+
+        <!-- hr -->
+
+        <!-- a center -->
+        <div class="a-center">
+            <a href="#">
+                <i class="fas fa-map-signs"></i>
+                Hệ thống cửa hàng
+            </a>
+        </div>
+        <!-- a center -->
+
+
+
+        <!-- body footer -->
+        <div class="body-footer">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="left-body">
+                        <h5>HỆ THỐNG STORE MWC TPHCM</h5>
+                        <p>Q.5: 414 Nguyễn Trãi , P.8</p>
+                        <p>Q.5: 416 Nguyễn Trãi , P.8</p>
+                        <p>Q.1: 214 Nguyễn Trãi, Nguyễn Cư Trinh</p>
+                        <p>Q.Gò Vấp: 430 Quang Trung, P.10</p>
+                        <p>Q.Thủ Đức: 356 Võ Văn Ngân, P.Bình Thọ</p>
+                        <p>Q.2: 110 Nguyễn Duy Trinh, P.Bình Trưng Tây</p>
+                        <p>Q.Tân Bình: 120 Cộng Hòa, P.4</p>
+                        <p>Q.Tân Bình: 326 Nguyễn Trọng Tuyễn, P.1</p>
+                        <p>Q.Tân Bình: 350 Âu Cơ, P.10</p>
+                        <p>Q.9 : 199A Lê Văn Việt , P.hiệp phú</p>
+                        <p>Q.7: 124 Nguyễn Thị Thập, Tân Phong</p>
+                        <p>Q.11: 126 Ông Ích Khiêm, P.3</p>
+                        <p>Q.6: 126 Hậu Giang, P.6</p>
+                        <p>Q.Thủ Đức: 74 Võ Văn Ngân, P.Bình Thọ</p>
+                        <p>Q.Bình Thạnh: 185 Bạch Đằng, P.15</p>
+                        <p>Q.12: 201 Lê Văn Khương, Hiệp Thành</p>
+                        <p>Q.12: 74/6 Nguyễn Ảnh Thủ, Q.12</p>
+                        <p>Q.Bình Tân: 338 Nguyễn Thị Tú, Bình Hưng Hòa B</p>
+                        <p>Q.Tân Phú:174 Tân Kỳ Tân Quý, Tân Sơn Nhì</p>
+                        <p>Q.Thủ Đức: 112 Hoàng Diệu 2, P.Linh Chiểu</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="center-body">
+                        <h5>TÂY NAM BỘ</h5>
+                        <p>Cần Thơ: 41G Mậu Thân, Q.Ninh Kiều</p>
+                        <p>Cần Thơ: 224 Trần Hưng Đạo, Q.Ninh Kiều</p>
+                        <p>Long An: 488 Hùng Vương, P.3, Tân An</p>
+                        <p>Tiền Giang: 542A Ấp Bắc , T.P Mỹ Tho</p>
+                        <p>Long Xuyên: 867 Hà Hoàng Hổ, P.Mỹ Xuyên</p>
+                        <p>Bến Tre: 345 Đồng Khởi, P.Phú Tân</p>
+                        <p>Kiên Giang : 542 Nguyễn Trung Trực , Rạch Giá</p>
+                        <p>Đồng Tháp: 150 Hùng Vương, P. 2, Tp.Cao Lãnh</p>
+                        <p>Sóc Trăng : 99 Lê Hồng Phong, P.13</p>
+                        <p>Trà Vinh : 123 Nguyễn Đáng, P.7</p>
+                        <p>Cà Mau: 274 Ngô Quyền, P.9</p>
+                        <p>Vĩnh Long: 55F Phạm Thái Bường, P.4</p>
+                        <p>Sa Đéc: 434 Nguyễn Sinh Sắc</p>
+                        <p>Châu Đốc: 136 Lê Lợi, P.Châu Phú B</p>
+                        <p>Bạc Liêu: 417 Trần Phú, Phường 7, TP Bạc Liêu</p>
+                        <p>Long An: 53 Nguyễn Hữu Thọ, KP3, TT Bến Lức, Huyên Bến Lức</p>
+                        <p>Hậu Giang: 22 Nguyễn Công Trứ, KP1, P.1, TP.Vị Thanh</p>
+                        <p>Long An:258 Tỉnh Lộ 825 Ấp Bình Tiền, Đức Hòa Hạ, Đức Hòa gần trường tiểu học Nguyễn Văn Phú 200 mét</p>
+                        <p>Hậu Giang: 782 Hùng Vương, KV3, P. Ngã Bảy, TP. Ngã Bảy</p>
+                        <p>Cần Thơ: 131 Đường 26 Tháng 3, Châu Văn Liêm, Ô Môn, TP.Cần Thơ</p>
+                        <p>Tiền Giang: 147 Nguyễn Huệ, P2, Thị Xã Gò Công</p>
+                        <p>Tiền Giang: 21 Đường 868, KP1, P.1,TX.Cai Lậy ( Đối diện ngân hàng Kiên Long) ngày KT 18/09/2020</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="right-body">
+                        <h5>MIỀN TRUNG</h5>
+                        <p>Bình Định: 470 Trần Hưng Đạo, TP Quy Nhơn</p>
+                        <p>Phú Yên: 116 Nguyễn Huệ, P7, Tp.Tuy Hòa, Phú Yên</p>
+                        
+                        
+                        <h5>ĐÔNG NAM BỘ</h5>
+                        <p>Biên Hòa: 169 Đường 30/4, Trung Dũng</p>
+                        <p>Biên Hòa: 1243 Phạm Văn Thuận, P.Thống Nhất</p>
+                        <p>Vũng Tàu: 510 Trương Công Định, P.8</p>
+                        <p>Đồng Nai: 575 Hùng Vương, Long Khánh</p>
+                        <p>Bình Dương: 212 Yersin , Tp.Thủ Dầu Một</p>
+                        <p>Tây Ninh: 437 Cách Mạng Tháng Tám, P.3</p>
+                        <p>Bình Phước: 1035 Phú Riềng Đỏ, KP.Xuân Bình, P.Tân Bình, Đồng Xoài</p>
+                        <p>Bình Dương: 26 Châu Văn Tiếp, P.Lái Thiêu, TX.Thuận An</p>
+                        <p>Bình Dương: 208 Nguyễn An Ninh, Thị Xã Dĩ An ( Sát Thế Giới Di Động Đối Diện Điện Máy Xanh )</p>
+                        <p>Long Thành: 295 Lê Duẩn, Đồng Nai</p>
+                        <p>Phan Thiết: 82 Trần Hưng Đạo, P.Phú Trinh , Bình Thuận</p>
+                        <p>Củ Chi: 151 Tỉnh Lộ 8, Thị Trấn Củ Chi</p>
+                        <p>Tây Ninh: 27 Khu Phố Lộc An Quốc Lộ 22, Trảng Bàng (Đối diện Honda Anh Tuấn )</p>
+                        <p>Phan Rang: 404 Ngô Gia Tự, Khu 2, P.Tấn Tài</p>
+                        <p>Bảo Lộc:403 Trần Phú, Lộc Sơn, TP. Bảo Lộc</p>
+                        <p>Đồng Nai: 10/5B Tây Kim, Gia Kiệm, Thống Nhất, Đồng Nai</p>
+                        <p>Đồng Nai: 141 Hùng Vương, TT.Xuân Lộc, Đồng Nai</p>
+                        <p>Đồng Nai: 717 đường số 767, Ấp An Chu, xã Bắc Sơn, Trảng Bom</p>
+                        <p>Nha Trang: 272 Thống Nhất, P.Phương Sơn,Tỉnh Khánh Hòa</p>
+                        <p>Vũng Tàu: 144 Nguyễn Hữu Thọ, TP.Bà Rịa</p>
+                        <p>Khánh Hòa: 569 Trần Quý Cáp, TT. Ninh Hòa, Ninh Hòa, Khánh Hòa ( khai trương ngày 2/10/2020)</p>
+                        <p>Khánh Hòa: 2206 Hùng Vương, Cam Lộc, Tp. Cam Ranh, Khánh Hòa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- body footer -->  
+    </div>
+
+    <div id='hr2'></div>
+
+
+    <div class="container">
+        <div class="bottom-footer">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="left-bottom">
+                        <h6>Công ty TNHH Sản xuất thương mại dịch vụ WMC</h6>
+                        <p>Địa chỉ: Số 7 đường 3A, khu dân cư Ấp 5, X. Phong Phú, H. Bình Chánh., Tp. HCM</p>
+                        <p>MST: 0314746543</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="right-bottom">
+                        <a href="http://online.gov.vn/Home/WebDetails/44889?AspxAutoDetectCookieSupport=1">
+                            <img src="img/dathongbaobct_150.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body> 
+</html>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="framework/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> 

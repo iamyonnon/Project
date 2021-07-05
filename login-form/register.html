@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/oracle.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head> 
+<body>  
+<div class="container active">
+    <div class="signin">
+        <h2>Oracle account sign in</h2>
+        <form action="" class="form">
+            <div class="form-group">
+                <div class="user">
+                    <input onchange="checkUser()" id="user" class="col-md-12" type="text" placeholder="Username">
+                    <i id="i-user" class="fas fa-info-circle"></i>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="pass">
+                    <input id="pass" class="col-md-12" type="text" placeholder="Password">
+                    <i id="i-pass" class="fas fa-info-circle"></i>
+                </div>
+            </div>
+        </form>
+
+        <button onclick="Login()" class="btn btn-success col-md-12">Sign in</button>
+
+        <div class="col-md-12 a-first">
+            <a href="#">Need help?</a>
+        </div>
+
+    </div>
+
+    <div class="account">
+        <p>Don't have an account ?</p>
+        <a class="a-prev" href="#">Create Account</a>
+        <div class="footer">
+            <i class="far fa-copyright"></i> 
+            <span>|</span>
+            <a href="#">Terms of Use</a>
+            <span>|</span>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/oracle.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> 
+
+ 

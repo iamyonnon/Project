@@ -1,0 +1,203 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none !important;
+  color: inherit !important;
+  box-sizing: border-box; }
+  *:focus {
+    outline: 0 !important; }
+  * input::-webkit-outer-spin-button,
+  * input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+
+::selection {
+  background-color: #7681A4;
+  color: #fff; }
+
+body {
+  height: 200vh; }
+
+.nav {
+  width: 100%;
+  background-color: #111;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  position: relative; }
+  .nav .container .col4-nav {
+    display: flex;
+    align-items: center; }
+    .nav .container .col4-nav .call {
+      display: flex;
+      align-items: center; }
+      .nav .container .col4-nav .call i, .nav .container .col4-nav .call a {
+        color: #ffffff !important;
+        font-size: 80%;
+        line-height: 20px; }
+      .nav .container .col4-nav .call i {
+        padding: 0px 5px; }
+    .nav .container .col4-nav span {
+      color: #ffffff !important;
+      padding: 0px 10px;
+      font-size: 80%;
+      line-height: 20px; }
+    .nav .container .col4-nav .email {
+      display: flex;
+      align-items: center; }
+      .nav .container .col4-nav .email i, .nav .container .col4-nav .email a {
+        color: #ffffff !important;
+        font-size: 80%;
+        line-height: 20px; }
+      .nav .container .col4-nav .email i {
+        padding: 0px 5px; }
+  .nav .container .col8-nav {
+    display: flex !important;
+    align-items: center;
+    height: 100%; }
+    .nav .container .col8-nav .nav-right {
+      display: flex !important;
+      align-items: center; }
+      @media screen and (max-width: 1180px) {
+        .nav .container .col8-nav .nav-right {
+          display: none !important; } }
+      .nav .container .col8-nav .nav-right ul {
+        position: absolute;
+        height: 100%; }
+        .nav .container .col8-nav .nav-right ul li {
+          display: inline-block;
+          border-right: 1px solid #ffffff;
+          height: 3400%;
+          cursor: pointer; }
+          .nav .container .col8-nav .nav-right ul li:hover {
+            background-color: rgba(255, 255, 255, 0.1); }
+          .nav .container .col8-nav .nav-right ul li a, .nav .container .col8-nav .nav-right ul li i {
+            display: inline-block !important;
+            color: #ffffff !important;
+            font-size: 90%;
+            line-height: 20px;
+            text-transform: uppercase; }
+          .nav .container .col8-nav .nav-right ul li a {
+            padding: 0px 7px;
+            height: 100%; }
+          .nav .container .col8-nav .nav-right ul li#li-right {
+            border: none;
+            padding: 0px 20px;
+            position: relative; }
+            .nav .container .col8-nav .nav-right ul li#li-right ul.ul-ab {
+              position: absolute;
+              left: -300px;
+              top: 35px;
+              display: none;
+              z-index: 9999; }
+              .nav .container .col8-nav .nav-right ul li#li-right ul.ul-ab li {
+                height: 120%;
+                display: block !important;
+                background-color: #2f2f2f;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                position: relative;
+                cursor: pointer; }
+                .nav .container .col8-nav .nav-right ul li#li-right ul.ul-ab li:hover {
+                  background-color: #111; }
+                .nav .container .col8-nav .nav-right ul li#li-right ul.ul-ab li a {
+                  font-family: none;
+                  display: inline-block;
+                  text-align: left;
+                  font-weight: 2px;
+                  padding: 7px 50px;
+                  width: 100%;
+                  font-size: 90%; }
+
+.menu {
+  width: 100%; }
+  .menu .container, .menu .sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000; }
+    .menu .container .col-md-2, .menu .sticky .col-md-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .menu .container .col-md-10 ul, .menu .sticky .col-md-10 ul {
+      width: 100% !important; }
+      .menu .container .col-md-10 ul li, .menu .sticky .col-md-10 ul li {
+        display: inline-block !important;
+        padding: 0px 11px;
+        margin-top: 20px;
+        position: relative; }
+        .menu .container .col-md-10 ul li:hover > ul, .menu .sticky .col-md-10 ul li:hover > ul {
+          display: block;
+          transition: all .4s ease; }
+        .menu .container .col-md-10 ul li ul, .menu .sticky .col-md-10 ul li ul {
+          position: absolute;
+          display: none;
+          width: 200px !important;
+          background-color: #ffffff;
+          z-index: 10; }
+          .menu .container .col-md-10 ul li ul li, .menu .sticky .col-md-10 ul li ul li {
+            display: inline-block !important;
+            width: 100% !important;
+            height: 100% !important;
+            margin: 0px !important;
+            padding: 0px !important; }
+            .menu .container .col-md-10 ul li ul li a, .menu .sticky .col-md-10 ul li ul li a {
+              display: inline-block;
+              text-transform: uppercase;
+              font-size: 90%;
+              padding: 5px 18px;
+              width: 100% !important;
+              height: 100% !important; }
+        .menu .container .col-md-10 ul li i#cart, .menu .sticky .col-md-10 ul li i#cart {
+          font-size: 125%;
+          cursor: pointer; }
+        .menu .container .col-md-10 ul li .icon-menu, .menu .sticky .col-md-10 ul li .icon-menu {
+          display: flex !important;
+          justify-content: center;
+          align-items: center; }
+          .menu .container .col-md-10 ul li .icon-menu img, .menu .sticky .col-md-10 ul li .icon-menu img {
+            display: block;
+            width: 45px;
+            margin: 0px auto; }
+          .menu .container .col-md-10 ul li .icon-menu p, .menu .sticky .col-md-10 ul li .icon-menu p {
+            text-transform: uppercase;
+            line-height: 20px;
+            font-size: 80%; }
+    .menu .container .col-md-10 .row .col-md-8 input, .menu .sticky .col-md-10 .row .col-md-8 input {
+      width: 100%;
+      border: 1px solid #ccc;
+      height: 38px;
+      position: relative;
+      padding: 0px 20px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px; }
+      .menu .container .col-md-10 .row .col-md-8 input::placeholder, .menu .sticky .col-md-10 .row .col-md-8 input::placeholder {
+        line-height: 20px;
+        font-style: normal;
+        font-weight: normal; }
+    .menu .container .col-md-10 .row .col-md-8 i, .menu .sticky .col-md-10 .row .col-md-8 i {
+      top: 25%;
+      display: inline-block;
+      position: absolute;
+      right: 4%; }
+    .menu .container .col-md-10 .row .col-md-4, .menu .sticky .col-md-10 .row .col-md-4 {
+      display: flex !important;
+      align-items: center; }
+      .menu .container .col-md-10 .row .col-md-4 i, .menu .sticky .col-md-10 .row .col-md-4 i {
+        display: inline-block !important;
+        font-size: 90%;
+        margin-right: 10px; }
+      .menu .container .col-md-10 .row .col-md-4 span, .menu .sticky .col-md-10 .row .col-md-4 span {
+        display: inline-block !important;
+        line-height: 30px; }
+
+.container .break {
+  background-color: none !important; }
+
+/*# sourceMappingURL=giaynam.css.map */
